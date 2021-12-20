@@ -44,6 +44,9 @@ export default function Navbar({ title }) {
                     <MenuItem>
                         <Link to='/category' className='link'>Category</Link>
                     </MenuItem>
+                    <MenuItem>
+                        <Link to='/sliders' className='link'>Slider</Link>
+                    </MenuItem>
                 </Menu>
                 <h1 className='flexItem'>{title}</h1>
                 <IconButton className='flexItem'>

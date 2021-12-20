@@ -1,0 +1,22 @@
+.slider__component {
+  background-image: linear-gradient(to right, #31aae1 0%, #265ac2 100%);
+  padding: 4vh;
+  margin: 3vh;
+  border-radius: 20px;
+  box-shadow: 0 1px 10px #585858;
+}
+
+.slider__info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider__div{
+  display: flex;
+  justify-content: center;
+}
+
+.slider__p{
+  display: flex;
+  justify-content:  space-between;
+}

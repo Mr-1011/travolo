@@ -10,6 +10,11 @@ export default function Category() {
   const [arr, setArr] = useState([]);
   const [checked, setChecked] = useState(false);
 
+  const toggleShow = (id) => {
+    arr.includes(id) ? setArr(arr.filter((item) => item !== id)) : setArr([...arr, id]);
+    console.log(arr);
+  }
+
   const handleChange = (event) =>{
     setChecked(event.target.checked);
   }
@@ -19,7 +24,7 @@ export default function Category() {
       <Navbar title={'just choose'}/>
       <div className='categoryright__div'>
         <div className='checkbox' >
-          <Checkbox onChange={handleChange} />
+          <Checkbox onChange={() => toggleShow(1)} />
         </div>
         <div className='category__info'>
           <img src={svg} />
@@ -31,10 +36,9 @@ export default function Category() {
           </div>
         </div>
       </div>
-
       <div>
-        {checked ? 
-        <Grow in={checked} {...(checked ? { timeout: 1000 } : {})}>
+        {arr.includes(1) ? 
+        <Grow in={arr.includes(1)} {...(arr.includes(1) ? { timeout: 1000 } : {})}>
           <div>
             <div className='subcategory__div'>
               <div className='subcategory__info'>
@@ -54,7 +58,7 @@ export default function Category() {
 
       <div className='categoryleft__div'>
         <div className='checkbox' >
-          <Checkbox onChange={handleChange} />
+          <Checkbox onChange={() => toggleShow(2)} />
         </div>
         <div className='category__info'>
           <div>
@@ -65,11 +69,30 @@ export default function Category() {
           <div className='divider' />
           <img src={svg} />
         </div>
+      </div>
+      <div>
+        {arr.includes(2) ? 
+        <Grow in={arr.includes(2)} {...(arr.includes(2) ? { timeout: 1000 } : {})}>
+          <div>
+            <div className='subcategory__div'>
+              <div className='subcategory__info'>
+                <Checkbox />
+                <p>Nature</p>
+              </div>
+              <div className='subcategory__info'>
+                <Checkbox />
+                <p>Nature</p>
+              </div>
+            </div>
+          </div>
+        </Grow>
+        :
+         null}
       </div>
 
       <div className='categoryright__div'>
         <div className='checkbox' >
-          <Checkbox onChange={handleChange} />
+          <Checkbox onChange={() => toggleShow(3)} />
         </div>
         <div className='category__info'>
           <img src={svg} />
@@ -81,10 +104,29 @@ export default function Category() {
           </div>
         </div>
       </div>
+      <div>
+        {arr.includes(3) ? 
+        <Grow in={arr.includes(3)} {...(arr.includes(3) ? { timeout: 1000 } : {})}>
+          <div>
+            <div className='subcategory__div'>
+              <div className='subcategory__info'>
+                <Checkbox />
+                <p>Nature</p>
+              </div>
+              <div className='subcategory__info'>
+                <Checkbox />
+                <p>Nature</p>
+              </div>
+            </div>
+          </div>
+        </Grow>
+        :
+         null}
+      </div>
 
       <div className='categoryleft__div'>
         <div className='checkbox' >
-          <Checkbox onChange={handleChange} />
+          <Checkbox onChange={() => toggleShow(4)} />
         </div>
         <div className='category__info'>
           <div>
@@ -95,6 +137,25 @@ export default function Category() {
           <div className='divider' />
           <img src={svg} />
         </div>
+      </div>
+      <div>
+        {arr.includes(4) ? 
+        <Grow in={arr.includes(4)} {...(arr.includes(4) ? { timeout: 1000 } : {})}>
+          <div>
+            <div className='subcategory__div'>
+              <div className='subcategory__info'>
+                <Checkbox />
+                <p>Nature</p>
+              </div>
+              <div className='subcategory__info'>
+                <Checkbox />
+                <p>Nature</p>
+              </div>
+            </div>
+          </div>
+        </Grow>
+        :
+         null}
       </div>
 
     </main>
