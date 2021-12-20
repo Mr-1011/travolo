@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Swipe from './Components/Swipe'
 import Category from './Components/Category';
 import Sliders from './Components/Sliders';
+import Dictionary from './Components/Dictionary';
 
 
 function App() {
@@ -11,15 +12,17 @@ function App() {
       <Router>
         <Routes>
           <Route path='/' element={
-            <Swipe/>
-          }/>
+            <Swipe />
+          } />
           <Route path='/category' element={
-            <Category/>
-          }/>
+            <Category />
+          } />
           <Route path='/sliders' element={
-            <Sliders/>
-          }/>
-
+            <Sliders />
+          } />
+          <Route path='/dictionary' element={
+            <Dictionary />
+          } />
         </Routes>
       </Router>
     </div>

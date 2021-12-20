@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 import '../Styling/Navbar.css'
 
 export default function Navbar({ title }) {
-    
+
     const [anchorEl, setAnchorEl] = React.useState(null);
     const open = Boolean(anchorEl);
     const handleClick = (event) => {
@@ -17,7 +17,7 @@ export default function Navbar({ title }) {
     const handleClose = () => {
         setAnchorEl(null);
     };
-    
+
     return (
         <nav>
             <div className='nav__center'>
@@ -36,7 +36,8 @@ export default function Navbar({ title }) {
                     open={open}
                     onClose={handleClose}
                     MenuListProps={{
-                    'aria-labelledby': 'basic-button'}}
+                        'aria-labelledby': 'basic-button'
+                    }}
                 >
                     <MenuItem>
                         <Link to='/' className='link'>Swipe</Link>
@@ -46,6 +47,9 @@ export default function Navbar({ title }) {
                     </MenuItem>
                     <MenuItem>
                         <Link to='/sliders' className='link'>Slider</Link>
+                    </MenuItem>
+                    <MenuItem>
+                        <Link to='/dictionary' className='link'>Dictionary</Link>
                     </MenuItem>
                 </Menu>
                 <h1 className='flexItem'>{title}</h1>
