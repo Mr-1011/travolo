@@ -1,6 +1,7 @@
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Swipe from './Components/Swipe'
+import Category from './Components/Category';
 
 
 function App() {
@@ -11,6 +12,10 @@ function App() {
           <Route path='/' element={
             <Swipe/>
           }/>
+          <Route path='/category' element={
+            <Category/>
+          }/>
+
         </Routes>
       </Router>
     </div>
