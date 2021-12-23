@@ -16,6 +16,19 @@
 	height: 57vh;
 	border-radius: 20px;
 	background-size: cover;
+	/* background-position: center;
+	box-shadow: 0px 18px 53px 0px rgba(0, 0, 0, 0.3); */
+}
+
+.card__shadow {
+	position: relative;
+	width: 600px;
+	padding: 20px;
+	margin: 20px;
+	max-width: 75vw;
+	height: 57vh;
+	border-radius: 20px;
+	background-size: cover;
 	background-position: center;
 	box-shadow: 0px 18px 53px 0px rgba(0, 0, 0, 0.3);
 }
