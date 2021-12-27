@@ -1,162 +1,158 @@
-import React, { useState } from 'react'
-import '../Styling/Category.css'
+import React from 'react'
+import '../Styling/Category.css';
 import Navbar from './Navbar';
-import Checkbox from '@mui/material/Checkbox';
-import svg from '../Data/Nature.svg';
-import Grow from '@mui/material/Grow';
+import TopicRight from './TopicRight';
+import TopicLeft from './TopicLeft';
+
+import Nature from '../Data/Nature.svg'
+import City from '../Data/City.svg'
+import Culture from '../Data/Culture.svg'
+import Adventure from '../Data/Adventure.svg'
+import Party from '../Data/Party.svg'
+import Event from '../Data/Event.svg'
+import Budget from '../Data/Budget.svg'
+import Group from '../Data/Group.svg'
+import Solo from '../Data/Solo.svg'
+import Backpack from '../Data/Backpack.svg'
+import LongTerm from '../Data/Long Term.svg'
+import RoadTrip from '../Data/Road Trip.svg'
+import Chill from '../Data/Chill.svg'
 
 export default function Category() {
 
-  const [arr, setArr] = useState([]);
-  const [checked, setChecked] = useState(false);
-
-  const toggleShow = (id) => {
-    arr.includes(id) ? setArr(arr.filter((item) => item !== id)) : setArr([...arr, id]);
-    console.log(arr);
-  }
-
-  const handleChange = (event) =>{
-    setChecked(event.target.checked);
-  }
 
   return (
     <main>
-      <Navbar title={'just choose'}/>
-      <div className='categoryright__div'>
-        <div className='checkbox' >
-          <Checkbox onChange={() => toggleShow(1)} />
-        </div>
-        <div className='category__info'>
-          <img src={svg} />
-          <div className='divider' />
-          <div>
-            <h3 style={{ margin: '10px 0' }}>Nature Wildlife</h3>
-            <p style={{ fontSize: '80%' }}>You like to go out into the wild see and feel the Fresh breath of nature.
-              Good or bad weather you dont care as Long as you are in the nature. And some more desciption.</p>
-          </div>
-        </div>
-      </div>
-      <div>
-        {arr.includes(1) ? 
-        <Grow in={arr.includes(1)} {...(arr.includes(1) ? { timeout: 1000 } : {})}>
-          <div>
-            <div className='subcategory__div'>
-              <div className='subcategory__info'>
-                <Checkbox />
-                <p>Nature</p>
-              </div>
-              <div className='subcategory__info'>
-                <Checkbox />
-                <p>Nature</p>
-              </div>
-            </div>
-          </div>
-        </Grow>
-        :
-         null}
-      </div>
+      <Navbar title={'just choose'} />
+      <TopicRight
+        title={'Nature Wildlife'}
+        description={'You like to be in the Nature. Chirping birds. Rippling water. A fresh breeze.'}
+        svg={Nature}
+        subTopic1={'Forrest'}
+        subTopic2={'Lake'}
+        subTopic3={'Mountains'}
+        subTopic4={'Hiking'}
+      />
 
-      <div className='categoryleft__div'>
-        <div className='checkbox' >
-          <Checkbox onChange={() => toggleShow(2)} />
-        </div>
-        <div className='category__info'>
-          <div>
-            <h3 style={{ margin: '10px 0' }}>Nature Wildlife</h3>
-            <p style={{ fontSize: '80%' }}>You like to go out into the wild see and feel the Fresh breath of nature.
-              Good or bad weather you dont care as Long as you are in the nature. And some more desciption.</p>
-          </div>
-          <div className='divider' />
-          <img src={svg} />
-        </div>
-      </div>
-      <div>
-        {arr.includes(2) ? 
-        <Grow in={arr.includes(2)} {...(arr.includes(2) ? { timeout: 1000 } : {})}>
-          <div>
-            <div className='subcategory__div'>
-              <div className='subcategory__info'>
-                <Checkbox />
-                <p>Nature</p>
-              </div>
-              <div className='subcategory__info'>
-                <Checkbox />
-                <p>Nature</p>
-              </div>
-            </div>
-          </div>
-        </Grow>
-        :
-         null}
-      </div>
+      <TopicLeft
+        title={'City Slicker'}
+        description={'You are obsessed with vibrant cities. Shopping, find dinning, and nightlife this is your cup of tea.'}
+        svg={City}
+        subTopic1={'Shopping'}
+        subTopic2={'Skyscrapper'}
+        subTopic3={'Night Life'}
+        subTopic4={'Fine Dinning'}
+      />
 
-      <div className='categoryright__div'>
-        <div className='checkbox' >
-          <Checkbox onChange={() => toggleShow(3)} />
-        </div>
-        <div className='category__info'>
-          <img src={svg} />
-          <div className='divider' />
-          <div>
-            <h3 style={{ margin: '10px 0' }}>Nature Wildlife</h3>
-            <p style={{ fontSize: '80%' }}>You like to go out into the wild see and feel the Fresh breath of nature.
-              Good or bad weather you dont care as Long as you are in the nature. And some more desciption.</p>
-          </div>
-        </div>
-      </div>
-      <div>
-        {arr.includes(3) ? 
-        <Grow in={arr.includes(3)} {...(arr.includes(3) ? { timeout: 1000 } : {})}>
-          <div>
-            <div className='subcategory__div'>
-              <div className='subcategory__info'>
-                <Checkbox />
-                <p>Nature</p>
-              </div>
-              <div className='subcategory__info'>
-                <Checkbox />
-                <p>Nature</p>
-              </div>
-            </div>
-          </div>
-        </Grow>
-        :
-         null}
-      </div>
+      <TopicRight
+        title={'Culture Vulture'}
+        description={'You travel to immerse yourself in the local culture and cherish the cultural experiences. Cultural enrichment, connecting with locals of that place that’s what you are looking for.'}
+        svg={Culture}
+        subTopic1={'Museum'}
+        subTopic2={'Sightseeing'}
+        subTopic3={'Locals'}
+        subTopic4={'Culinary'}
+      />
 
-      <div className='categoryleft__div'>
-        <div className='checkbox' >
-          <Checkbox onChange={() => toggleShow(4)} />
-        </div>
-        <div className='category__info'>
-          <div>
-            <h3 style={{ margin: '10px 0' }}>Nature Wildlife</h3>
-            <p style={{ fontSize: '80%' }}>You like to go out into the wild see and feel the Fresh breath of nature.
-              Good or bad weather you dont care as Long as you are in the nature. And some more desciption.</p>
-          </div>
-          <div className='divider' />
-          <img src={svg} />
-        </div>
-      </div>
-      <div>
-        {arr.includes(4) ? 
-        <Grow in={arr.includes(4)} {...(arr.includes(4) ? { timeout: 1000 } : {})}>
-          <div>
-            <div className='subcategory__div'>
-              <div className='subcategory__info'>
-                <Checkbox />
-                <p>Nature</p>
-              </div>
-              <div className='subcategory__info'>
-                <Checkbox />
-                <p>Nature</p>
-              </div>
-            </div>
-          </div>
-        </Grow>
-        :
-         null}
-      </div>
+      <TopicLeft
+        title={'Adventure Seeker'}
+        description={'Pushing your limits is your motto you love challenging and intense experience that give a sense of self accomplishment. Physical participation and adrenalin.'}
+        svg={Adventure}
+        subTopic1={''}
+        subTopic2={''}
+        subTopic3={''}
+        subTopic4={''}
+      />
+
+      <TopicRight
+        title={'Party Seeker'}
+        description={'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua'}
+        svg={Party}
+        subTopic1={''}
+        subTopic2={''}
+        subTopic3={''}
+        subTopic4={''}
+      />
+
+      <TopicLeft
+        title={'Event Traveler'}
+        description={'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua'}
+        svg={Event}
+        subTopic1={''}
+        subTopic2={''}
+        subTopic3={''}
+        subTopic4={''}
+      />
+
+      <TopicRight
+        title={'Budget Traveler'}
+        description={'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua'}
+        svg={Budget}
+        subTopic1={''}
+        subTopic2={''}
+        subTopic3={''}
+        subTopic4={''}
+      />
+
+      <TopicLeft
+        title={'Group Traveler'}
+        description={'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua'}
+        svg={Group}
+        subTopic1={''}
+        subTopic2={''}
+        subTopic3={''}
+        subTopic4={''}
+      />
+
+      <TopicRight
+        title={'Solo Traveler'}
+        description={'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua'}
+        svg={Solo}
+        subTopic1={''}
+        subTopic2={''}
+        subTopic3={''}
+        subTopic4={''}
+      />
+
+      <TopicLeft
+        title={'Backpack Traveler'}
+        description={'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua'}
+        svg={Backpack}
+        subTopic1={''}
+        subTopic2={''}
+        subTopic3={''}
+        subTopic4={''}
+      />
+
+      <TopicRight
+        title={'Long Term'}
+        description={'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua'}
+        svg={LongTerm}
+        subTopic1={''}
+        subTopic2={''}
+        subTopic3={''}
+        subTopic4={''}
+      />
+
+      <TopicLeft
+        title={'Road Trip'}
+        description={'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua'}
+        svg={RoadTrip}
+        subTopic1={''}
+        subTopic2={''}
+        subTopic3={''}
+        subTopic4={''}
+      />
+
+      <TopicRight
+        title={'Just Chilling'}
+        description={'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua'}
+        svg={Chill}
+        subTopic1={''}
+        subTopic2={''}
+        subTopic3={''}
+        subTopic4={''}
+      />
 
     </main>
   )

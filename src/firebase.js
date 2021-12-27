@@ -3,13 +3,13 @@ import 'firebase/compat/auth';
 import 'firebase/compat/firestore';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDVBJdOuY2-YyCtIo3Hv4NDUAvnhMdQQDk",
-  authDomain: "travolo-d4175.firebaseapp.com",
-  projectId: "travolo-d4175",
-  storageBucket: "travolo-d4175.appspot.com",
-  messagingSenderId: "260026717678",
-  appId: "1:260026717678:web:f684c29fee10419ed42aff",
-  measurementId: "G-MV1VSS3DVN"
+  apiKey: "AIzaSyAZ71P7eH941a6MZP75YYfVTEWkItGhFK8",
+  authDomain: "travolo-240dd.firebaseapp.com",
+  projectId: "travolo-240dd",
+  storageBucket: "travolo-240dd.appspot.com",
+  messagingSenderId: "593832133598",
+  appId: "1:593832133598:web:7cad3189a4a7e058d5534f",
+  measurementId: "G-9N2ZELG6ZW"
 };
 
 const firebaseApp = firebase.initializeApp(firebaseConfig);

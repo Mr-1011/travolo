@@ -1,99 +1,58 @@
 import React from 'react';
 import Navbar from './Navbar';
-import Slider from '@mui/material/Slider';
+import SliderComp from './SliderComp';
 import '../Styling/Sliders.css'
-import svg from '../Data/Nature.svg'
+
+import Nature from '../Data/Nature.svg'
+import City from '../Data/City.svg'
+import Culture from '../Data/Culture.svg'
+import Adventure from '../Data/Adventure.svg'
+import Party from '../Data/Party.svg'
+import Event from '../Data/Event.svg'
+import Budget from '../Data/Budget.svg'
+import Group from '../Data/Group.svg'
+import Solo from '../Data/Solo.svg'
+import Backpack from '../Data/Backpack.svg'
+import LongTerm from '../Data/Long Term.svg'
+import RoadTrip from '../Data/Road Trip.svg'
+import Chill from '../Data/Chill.svg'
 
 export default function Sliders() {
-  const marks = [
-    {
-      value: 0,
-      label: 'hate it',
-    },
-    {
-      value: 100,
-      label: 'love ir',
-    }
-  ]
 
   return (
     <main>
       <Navbar title={'just slide'} />
-      <div className='slider__component'>
-        <div className='slider__info'>
-          <h2>Nature</h2>
-          <img src={svg} />
-        </div>
-        <div className='slider__div'>
-          <Slider
-            sx={{
-              width: 250,
-              color: 'white',
-            }}
-          />
-        </div>
-        <div className='slider__p'>
-          <p>hate it</p>
-          <p>love it</p>
-        </div>
-      </div>
 
-      <div className='slider__component'>
-        <div className='slider__info'>
-          <h2>Nature</h2>
-          <img src={svg} />
-        </div>
-        <div className='slider__div'>
-          <Slider
-            sx={{
-              width: 250,
-              color: 'white',
-            }}
-          />
-        </div>
-        <div className='slider__p'>
-          <p>hate it</p>
-          <p>love it</p>
-        </div>
-      </div>
+      <SliderComp
+        title='Nature'
+        svg={Nature}
+      />
 
-      <div className='slider__component'>
-        <div className='slider__info'>
-          <h2>Nature</h2>
-          <img src={svg} />
-        </div>
-        <div className='slider__div'>
-          <Slider
-            sx={{
-              width: 250,
-              color: 'white',
-            }}
-          />
-        </div>
-        <div className='slider__p'>
-          <p>hate it</p>
-          <p>love it</p>
-        </div>
-      </div>
+      <SliderComp
+        title='City'
+        svg={City}
+      />
 
-      <div className='slider__component'>
-        <div className='slider__info'>
-          <h2>Nature</h2>
-          <img src={svg} />
-        </div>
-        <div className='slider__div'>
-          <Slider
-            sx={{
-              width: 250,
-              color: 'white',
-            }}
-          />
-        </div>
-        <div className='slider__p'>
-          <p>hate it</p>
-          <p>love it</p>
-        </div>
-      </div>
+      <SliderComp
+        title='Culture'
+        svg={Culture}
+      />
+
+      <SliderComp
+        title='Adventure'
+        svg={Adventure}
+      />
+
+      <SliderComp
+        title='Party'
+        svg={Party}
+      />
+
+      <SliderComp
+        title='Event'
+        svg={Event}
+      />
+
     </main>
   )
 }

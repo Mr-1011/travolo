@@ -1,0 +1,15 @@
+.subTopic__div{
+  background-image: linear-gradient(to right, #31aae1 0%, #265ac2 100%);
+  border-radius: 15px;
+	box-shadow: 0 1px 10px #585858;
+  display: flex;
+  align-items: center;
+  height: 7vh;
+  width: 40vw;
+  flex-shrink: 0;
+  margin-bottom: 2vh;
+}
+
+.subTopic__checkbox {
+  margin-left: 1vw;
+}

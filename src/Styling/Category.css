@@ -20,6 +20,10 @@
 	display: flex;
 }
 
+.category__svg {
+	width: 25vw;
+}
+
 .checkbox {
 	position: absolute;
 	top: 2vw;
@@ -30,7 +34,7 @@
 	background: #ffffff;
 	width: 1px;
 	height: 150px;
-	margin: 0 10px;
+	margin: 0 15px;
 }
 
 .subcategory__div {
@@ -38,12 +42,3 @@
 	justify-content: space-evenly;
 }
 
-.subcategory__info {
-	background-image: linear-gradient(to right, #31aae1 0%, #265ac2 100%);
-	padding: 1vh 10vw;
-	margin-bottom: 2vh;
-	border-radius: 15px;
-	box-shadow: 0 1px 10px #585858;
-	display: flex;
-	justify-content: center;
-}
