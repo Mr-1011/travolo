@@ -5,7 +5,7 @@ import Navbar from './Navbar'
 export default function Dictionary() {
   return (
     <div>
-      <Navbar title={'just tipe'} />
+      <Navbar title={'just type'} />
     </div>
   )
 }

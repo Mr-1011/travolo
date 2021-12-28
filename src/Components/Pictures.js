@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import TinderCard from 'react-tinder-card'
-import '../Styling/Pictures.css'
-import database from '../firebase'
+import TinderCard from 'react-tinder-card';
+import '../Styling/Pictures.css';
+import database from '../firebase';
+import data from '../Data/data';
+
 
 
 export default function Pictures() {
@@ -17,19 +19,48 @@ export default function Pictures() {
     }
   }, [])
 
+
+  const [index, setIndex] = useState(0);
+  const { id, img, desc } = data[index];
+  const [cont, setCont] = useState(false)
+
+  const more = () => {
+    setCont(!cont);
+    setIndex(index + 7)
+  }
+
   return (
     <div className='pictures__div'>
-      <TinderCard className='swipe' key='key' preventSwipe={['up', 'down']}>
-        <div className='card__shadow' style={{ backgroundImage: `url('http://drive.google.com/uc?export=view&id=1mo3f5ileysgpjHfdsmAuqNpqQgeWBNIm')` }} >
-          <h1>Continue?</h1>
+      {cont ?
+        <>
+          {data.slice(index, index + 7).map(pic => (
+            <TinderCard className='swipe' key={pic.id} preventSwipe={['up', 'down']}>
+              <div className='card' style={{ backgroundImage: `url(${pic.img})` }} />
+            </TinderCard>
+          ))}
+        </>
+        :
+        <div className='card__stop' style={{ backgroundImage: `url('http://drive.google.com/uc?export=view&id=1mo3f5ileysgpjHfdsmAuqNpqQgeWBNIm')` }} >
+          <h1 className='card__stop__h1'>Continue?</h1>
+          <div className='card__buttons'>
+            <button className='card__button' onClick={more}>yes</button>
+            <button className='card__button' onClick={more}>no</button>
+          </div>
         </div>
-      </TinderCard>
+      }
 
-      {picture.map(pic => (
+      {data.slice(index, 7).map(pic => (
+        <TinderCard className='swipe' key={pic.id} preventSwipe={['up', 'down']}>
+          <div className='card' style={{ backgroundImage: `url(${pic.img})` }} />
+        </TinderCard>
+      ))}
+
+      {/* {picture.map(pic => (
         <TinderCard className='swipe' key='key' preventSwipe={['up', 'down']}>
           <div className='card' style={{ backgroundImage: `url(${pic.url})` }} />
         </TinderCard>
-      ))}
-    </div>
+      ))} */}
+
+    </div >
   )
 }

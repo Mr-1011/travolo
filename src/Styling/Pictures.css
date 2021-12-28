@@ -9,18 +9,18 @@
 
 .card {
 	position: relative;
+	width: 200px;
 	width: 75vw;
+	height: 64vh;
 	padding: 20px;
 	margin: 20px;
-	height: 64vh;
 	border-radius: 20px;
 	background-size: cover;
 	background-position: center;
-	/* box-shadow: 0px 18px 53px 0px rgba(0, 0, 0, 0.3); */
 }
 
-.card__shadow {
-	position: relative;
+.card__stop {
+	position: absolute;
 	width: 75vw;
 	padding: 20px;
 	margin: 20px;
@@ -29,4 +29,21 @@
 	background-size: cover;
 	background-position: center;
 	box-shadow: 0px 18px 53px 0px rgba(0, 0, 0, 0.3);
+	text-align: center;
+}
+
+.card__stop__h1{
+	margin-top: 20vh;
+}
+
+.card__buttons{
+	display: flex;
+	justify-content: center;
+}
+
+.card__button{
+	border-radius: 20px;
+	margin: 5vw;
+	height: 5vh;
+	width: 20vw;
 }
