@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import TinderCard from 'react-tinder-card'
-import test from '../Data/test.png'
 import '../Styling/Pictures.css'
 import database from '../firebase'
 

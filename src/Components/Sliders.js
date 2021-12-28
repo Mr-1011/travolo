@@ -3,19 +3,15 @@ import Navbar from './Navbar';
 import SliderComp from './SliderComp';
 import '../Styling/Sliders.css'
 
-import Nature from '../Data/Nature.svg'
-import City from '../Data/City.svg'
-import Culture from '../Data/Culture.svg'
-import Adventure from '../Data/Adventure.svg'
-import Party from '../Data/Party.svg'
-import Event from '../Data/Event.svg'
-import Budget from '../Data/Budget.svg'
-import Group from '../Data/Group.svg'
-import Solo from '../Data/Solo.svg'
-import Backpack from '../Data/Backpack.svg'
-import LongTerm from '../Data/Long Term.svg'
-import RoadTrip from '../Data/Road Trip.svg'
-import Chill from '../Data/Chill.svg'
+import Nature from '../Data/svg/Nature.svg'
+import City from '../Data/svg/City.svg'
+import Culture from '../Data/svg/Culture.svg'
+import Adventure from '../Data/svg/Adventure.svg'
+import Party from '../Data/svg/Party.svg'
+import Event from '../Data/svg/Event.svg'
+import Backpack from '../Data/svg/Backpack.svg'
+import RoadTrip from '../Data/svg/Road Trip.svg'
+import Chill from '../Data/svg/Chill.svg'
 
 export default function Sliders() {
 
@@ -24,17 +20,17 @@ export default function Sliders() {
       <Navbar title={'just slide'} />
 
       <SliderComp
-        title='Nature'
+        title='Nature & Wildlife'
         svg={Nature}
       />
 
       <SliderComp
-        title='City'
+        title='City & Highlife'
         svg={City}
       />
 
       <SliderComp
-        title='Culture'
+        title='Culture & Art'
         svg={Culture}
       />
 
@@ -44,13 +40,28 @@ export default function Sliders() {
       />
 
       <SliderComp
-        title='Party'
+        title='Road Trip and go'
+        svg={RoadTrip}
+      />
+
+      <SliderComp
+        title='Party & Clubs'
         svg={Party}
       />
 
       <SliderComp
-        title='Event'
+        title='Event & Festivals'
         svg={Event}
+      />
+
+      <SliderComp
+        title='Backpack Traveling'
+        svg={Backpack}
+      />
+
+      <SliderComp
+        title='Chill & Relax'
+        svg={Chill}
       />
 
     </main>
