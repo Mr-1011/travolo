@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react';
 import Menu from '@mui/material/Menu';
 import IconButton from '@mui/material/IconButton';
 import MenuItem from '@mui/material/MenuItem';
@@ -7,9 +7,9 @@ import MenuIcon from '@mui/icons-material/Menu';
 import { Link } from "react-router-dom";
 import '../Styling/Navbar.css'
 
-export default function Navbar({ title }) {
+export default function Navbar({ title, desc }) {
 
-    const [anchorEl, setAnchorEl] = React.useState(null);
+    const [anchorEl, setAnchorEl] = useState(null);
     const open = Boolean(anchorEl);
     const handleClick = (event) => {
         setAnchorEl(event.currentTarget);
@@ -18,8 +18,15 @@ export default function Navbar({ title }) {
         setAnchorEl(null);
     };
 
+    const [checked, setChecked] = useState(true);
+
+    const handleSubmit = () => {
+        setChecked(!checked);
+    }
+
     return (
         <nav>
+
             <div className='nav__center'>
                 <IconButton
                     className='flexItem'
@@ -57,9 +64,23 @@ export default function Navbar({ title }) {
                 </Menu>
                 <h1 className='flexItem'>{title}</h1>
                 <IconButton className='flexItem'>
-                    <HelpIcon fontSize='large' className='nav__icon' />
+                    <HelpIcon fontSize='large' className='nav__icon'
+                        onClick={handleSubmit}
+                    />
                 </IconButton>
             </div>
+            {checked ?
+                <div className='help__div'>
+                    <div className='help__text__div'>
+                        <h1 className='help__h1'>Quick guide</h1>
+                        <p className='help__p'>{desc}</p>
+                        <button className='help__button' onClick={handleSubmit}>go it</button>
+                    </div>
+                </div>
+                :
+                null
+            }
+
         </nav>
     )
 }

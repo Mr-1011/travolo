@@ -23,7 +23,7 @@ export default function Category() {
 
   return (
     <main>
-      <Navbar title={'just choose'} />
+      <Navbar title={'just choose'} desc={'just pic topics that you like'} />
       <TopicRight
         title={'Nature Wildlife'}
         description={'You like to be in the Nature. Chirping birds. Rippling water. A fresh breeze.'}

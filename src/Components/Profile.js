@@ -9,7 +9,7 @@ import GoogleIcon from '@mui/icons-material/Google';
 export default function Profile() {
   return (
     <div>
-      <Navbar title={'just link'} />
+      <Navbar title={'just link'} desc={'just copy and paste links from either social media profiles or Google Drive links to let an algorithm scan them an analyze you interests'} />
       <div className='profile__div'>
         <InstagramIcon sx={{ color: '#265ac2', fontSize: 50, margin: 1 }} />
         <TextField

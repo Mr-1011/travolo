@@ -17,7 +17,7 @@ export default function Sliders() {
 
   return (
     <main>
-      <Navbar title={'just slide'} />
+      <Navbar title={'just slide'} desc={'just put the slider on the following categories whether you like them or not'} />
 
       <SliderComp
         title='Nature & Wildlife'

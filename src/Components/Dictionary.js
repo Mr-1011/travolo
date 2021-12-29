@@ -15,7 +15,7 @@ export default function Dictionary() {
 
   return (
     <div>
-      <Navbar title={'just type'} />
+      <Navbar title={'just type'} desc={'just type categories you are looking for for your next vacation'} />
       <div className='dictionary__div'>
         <form onSubmit={handleSubmit}>
           <Autocomplete

@@ -24,3 +24,33 @@ nav {
 .nav__icon {
 	color: white;
 }
+
+.help__div{
+	background: linear-gradient(to right, #31aae1 0%, #265ac2 100%);
+	margin-top: 6vh;
+	z-index: 2;
+	border-radius: 25px;
+	position: fixed;
+	box-shadow: 0 2px 10px #585858;
+	width:92vw;
+	height: 70vh;
+}
+
+.help__text__div{
+	text-align: center;
+}
+
+.help__h1{
+	margin: 2vh;
+	font-size: 6vh;
+}
+
+.help__button{
+	margin-top: 5vh;
+	width: 20vw;
+	height: 6vh;
+}
+
+.help__p{
+	margin: 0 5vw;
+}
