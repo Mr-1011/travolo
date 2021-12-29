@@ -21,7 +21,6 @@ export default function Pictures() {
 
 
   const [index, setIndex] = useState(0);
-  const { id, img, desc } = data[index];
   const [cont, setCont] = useState(false)
 
   const more = () => {

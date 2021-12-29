@@ -49,6 +49,9 @@ export default function Navbar({ title }) {
                         <Link to='/sliders' className='link'>Slider</Link>
                     </MenuItem>
                     <MenuItem>
+                        <Link to='/profile' className='link'>Profiler</Link>
+                    </MenuItem>
+                    <MenuItem>
                         <Link to='/dictionary' className='link'>Dictionary</Link>
                     </MenuItem>
                 </Menu>

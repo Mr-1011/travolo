@@ -20,7 +20,7 @@
 }
 
 .card__stop {
-	position: absolute;
+	position: relative;
 	width: 75vw;
 	padding: 20px;
 	margin: 20px;
