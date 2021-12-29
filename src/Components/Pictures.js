@@ -3,6 +3,8 @@ import TinderCard from 'react-tinder-card';
 import '../Styling/Pictures.css';
 import database from '../firebase';
 import data from '../Data/data';
+import { Link } from "react-router-dom";
+import { Button } from '@mui/material';
 
 
 
@@ -28,6 +30,10 @@ export default function Pictures() {
     setIndex(index + 7)
   }
 
+  const stop = () => {
+
+  }
+
   return (
     <div className='pictures__div'>
       {cont ?
@@ -42,8 +48,10 @@ export default function Pictures() {
         <div className='card__stop' style={{ backgroundImage: `url('http://drive.google.com/uc?export=view&id=1mo3f5ileysgpjHfdsmAuqNpqQgeWBNIm')` }} >
           <h1 className='card__stop__h1'>Continue?</h1>
           <div className='card__buttons'>
-            <button className='card__button' onClick={more}>yes</button>
-            <button className='card__button' onClick={more}>no</button>
+            <Button variant="contained" onClick={more} size="large" sx={{ width: 100, backgroundColor: '#ffffff', color: '#000000' }}>yes</Button>
+            <Link to='/category' className='next__link'>
+              <Button className='button__pic' variant="contained" onClick={stop} size="large" sx={{ width: 100, backgroundColor: '#ffffff', color: '#000000' }}>no</Button>
+            </Link>
           </div>
         </div>
       }

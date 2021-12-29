@@ -3,6 +3,8 @@ import '../Styling/Category.css';
 import Navbar from './Navbar';
 import TopicRight from './TopicRight';
 import TopicLeft from './TopicLeft';
+import { Button } from '@mui/material';
+import { Link } from "react-router-dom";
 
 import Nature from '../Data/svg/Nature.svg'
 import City from '../Data/svg/City.svg'
@@ -153,7 +155,11 @@ export default function Category() {
         subTopic3={''}
         subTopic4={''}
       />
-
+      <div className='next__div'>
+        <Link to='/sliders' className='next__link'>
+          <Button variant="contained" size="large" sx={{ width: 160 }}>Next</Button>
+        </Link>
+      </div>
     </main>
   )
 }

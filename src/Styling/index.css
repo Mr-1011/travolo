@@ -7,4 +7,5 @@ body {
     sans-serif;
   background: whitesmoke;
   color: whitesmoke;
+  overflow-x: hidden;
 }

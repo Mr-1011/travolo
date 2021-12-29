@@ -38,7 +38,8 @@
 
 .card__buttons{
 	display: flex;
-	justify-content: center;
+	justify-content:space-around;
+	margin-top: 5vh;
 }
 
 .card__button{

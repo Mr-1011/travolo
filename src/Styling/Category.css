@@ -42,3 +42,11 @@
 	justify-content: space-evenly;
 }
 
+.next__div{
+	text-align: center;
+	margin-bottom: 4vh;
+}
+
+.next__link {
+	text-decoration: none;
+}

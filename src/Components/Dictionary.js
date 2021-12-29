@@ -3,6 +3,8 @@ import { Autocomplete, TextField } from '@mui/material'
 import '../Styling/Dictionary.css'
 import Navbar from './Navbar'
 import words from '../Data/words'
+import { Button } from '@mui/material';
+import { Link } from "react-router-dom";
 
 
 export default function Dictionary() {
@@ -33,6 +35,11 @@ export default function Dictionary() {
             )}
           />
         </form>
+      </div>
+      <div className='next__div' style={{ marginTop: "4vh" }}>
+        <Link to='/sliders' className='next__link' >
+          <Button variant="contained" size="large" sx={{ width: 160 }}>Next</Button>
+        </Link>
       </div>
     </div>
   )

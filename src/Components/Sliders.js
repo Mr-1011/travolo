@@ -2,6 +2,8 @@ import React from 'react';
 import Navbar from './Navbar';
 import SliderComp from './SliderComp';
 import '../Styling/Sliders.css'
+import { Button } from '@mui/material';
+import { Link } from "react-router-dom";
 
 import Nature from '../Data/svg/Nature.svg'
 import City from '../Data/svg/City.svg'
@@ -63,6 +65,12 @@ export default function Sliders() {
         title='Chill & Relax'
         svg={Chill}
       />
+
+      <div className='next__div'>
+        <Link to='/profile' className='next__link'>
+          <Button variant="contained" size="large" sx={{ width: 160 }}>Next</Button>
+        </Link>
+      </div>
 
     </main>
   )

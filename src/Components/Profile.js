@@ -5,6 +5,8 @@ import { TextField } from '@mui/material'
 import InstagramIcon from '@mui/icons-material/Instagram';
 import PinterestIcon from '@mui/icons-material/Pinterest';
 import GoogleIcon from '@mui/icons-material/Google';
+import { Button } from '@mui/material';
+import { Link } from "react-router-dom";
 
 export default function Profile() {
   return (
@@ -33,6 +35,11 @@ export default function Profile() {
           label="Google Drive Link"
           placeholder="Link"
         />
+      </div>
+      <div className='next__div' style={{ marginTop: "4vh" }}>
+        <Link to='/dictionary' className='next__link'>
+          <Button variant="contained" size="large" sx={{ width: 160 }}>Next</Button>
+        </Link>
       </div>
     </div>
   )
