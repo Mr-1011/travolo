@@ -2,7 +2,6 @@ import React from 'react';
 import Navbar from './Navbar';
 import SliderComp from './SliderComp';
 import '../Styling/Sliders.css'
-import { Button } from '@mui/material';
 import { Link } from "react-router-dom";
 
 import Nature from '../Data/svg/Nature.svg'
@@ -12,7 +11,7 @@ import Adventure from '../Data/svg/Adventure.svg'
 import Party from '../Data/svg/Party.svg'
 import Event from '../Data/svg/Event.svg'
 import Backpack from '../Data/svg/Backpack.svg'
-import RoadTrip from '../Data/svg/Road Trip.svg'
+import RoadTrip from '../Data/svg/Road-Trip.svg'
 import Chill from '../Data/svg/Chill.svg'
 
 export default function Sliders() {
@@ -42,12 +41,12 @@ export default function Sliders() {
       />
 
       <SliderComp
-        title='Road Trip and go'
+        title='Road Trip & GO'
         svg={RoadTrip}
       />
 
       <SliderComp
-        title='Party & Clubs'
+        title='Party, Clubs & Nightlife'
         svg={Party}
       />
 
@@ -68,7 +67,9 @@ export default function Sliders() {
 
       <div className='next__div'>
         <Link to='/profile' className='next__link'>
-          <Button variant="contained" size="large" sx={{ width: 160 }}>Next</Button>
+          <button className='button__next'>
+            NEXT
+          </button>
         </Link>
       </div>
 

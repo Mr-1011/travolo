@@ -22,11 +22,11 @@
 }
 
 .slider__svg {
-  height: 11vh;
-  max-width: 36vw;
-  margin-bottom: 2vh;
+  height: 10vh;
+  max-width: 30vw;
+  margin: 0 2vw 2vh 8vw;
 }
 
 .slider__title{
-  font-size: 8vw;
+  font-size: 7vw;
 }

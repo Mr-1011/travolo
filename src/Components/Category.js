@@ -3,7 +3,6 @@ import '../Styling/Category.css';
 import Navbar from './Navbar';
 import TopicRight from './TopicRight';
 import TopicLeft from './TopicLeft';
-import { Button } from '@mui/material';
 import { Link } from "react-router-dom";
 
 import Nature from '../Data/svg/Nature.svg'
@@ -16,8 +15,8 @@ import Budget from '../Data/svg/Budget.svg'
 import Group from '../Data/svg/Group.svg'
 import Solo from '../Data/svg/Solo.svg'
 import Backpack from '../Data/svg/Backpack.svg'
-import LongTerm from '../Data/svg/Long Term.svg'
-import RoadTrip from '../Data/svg/Road Trip.svg'
+import LongTerm from '../Data/svg/Long-Term.svg'
+import RoadTrip from '../Data/svg/Road-Trip.svg'
 import Chill from '../Data/svg/Chill.svg'
 
 export default function Category() {
@@ -157,7 +156,9 @@ export default function Category() {
       />
       <div className='next__div'>
         <Link to='/sliders' className='next__link'>
-          <Button variant="contained" size="large" sx={{ width: 160 }}>Next</Button>
+          <button className='button__next'>
+            NEXT
+          </button>
         </Link>
       </div>
     </main>

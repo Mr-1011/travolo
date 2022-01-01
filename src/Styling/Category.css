@@ -50,3 +50,14 @@
 .next__link {
 	text-decoration: none;
 }
+
+.button__next{
+	width: 60vw;
+	height: 7vh;
+	border-radius: 30px;
+	border: none;
+	font-size: large;
+	color: white;
+	background-image: linear-gradient(to right, #31aae1 0%, #265ac2 100%);
+	box-shadow: 0px 18px 53px 0px rgba(0, 0, 0, 0.3);
+}
