@@ -17,11 +17,14 @@ export default function TopicLeft({ title, description, svg, subTopic1, subTopic
     <div>
       <div className='categoryleft__div'>
         <div className='checkbox' >
-          <Checkbox onChange={handleChange} />
+          <Checkbox onChange={handleChange} sx={{
+            color: 'white',
+            '&.Mui-checked': { color: 'white' }
+          }} />
         </div>
         <div className='category__info'>
-          <div>
-            <h3 style={{ margin: '10px 0' }}>{title}</h3>
+          <div className='category__text'>
+            <h3 style={{ margin: '10px 0 5px 0' }}>{title}</h3>
             <p style={{ fontSize: '80%' }}>{description}</p>
           </div>
           <div className='divider' />

@@ -155,7 +155,6 @@ const words = [
   { label: 'Itinerary' },
   { label: 'Jaunt' },
   { label: 'Journey' },
-  { label: 'Journey' },
   { label: 'Joy' },
   { label: 'Joyride' },
   { label: 'Junket' },

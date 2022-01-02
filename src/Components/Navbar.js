@@ -27,7 +27,6 @@ export default function Navbar({ title, desc }) {
 
     return (
         <nav>
-
             <div className='nav__center'>
                 <IconButton
                     className='flexItem'
@@ -83,7 +82,6 @@ export default function Navbar({ title, desc }) {
                 :
                 null
             }
-
         </nav>
     )
 }

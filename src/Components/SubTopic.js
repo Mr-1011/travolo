@@ -6,7 +6,10 @@ export default function SubTopic({ info, check }) {
   return (
     <div className='subTopic__div'>
       <div className='subTopic__checkbox'>
-        <Checkbox />
+        <Checkbox sx={{
+          color: 'white',
+          '&.Mui-checked': { color: 'white' }
+        }} />
       </div>
       <p>{info}</p>
     </div>

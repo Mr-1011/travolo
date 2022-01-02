@@ -17,13 +17,16 @@ export default function TopicRight({ title, description, svg, subTopic1, subTopi
     <div>
       <div className='categoryright__div'>
         <div className='checkbox' >
-          <Checkbox onChange={handleChange} />
+          <Checkbox onChange={handleChange} sx={{
+            color: 'white',
+            '&.Mui-checked': { color: 'white' }
+          }} />
         </div>
         <div className='category__info'>
           <img className='category__svg' src={svg} alt={''} />
           <div className='divider' />
-          <div>
-            <h3 style={{ margin: '10px 0' }}>{title}</h3>
+          <div className='category__text'>
+            <h3 style={{ margin: '10px 0 5px 0' }}>{title}</h3>
             <p style={{ fontSize: '80%' }}>{description}</p>
           </div>
         </div>
