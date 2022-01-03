@@ -2,5 +2,25 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 5vh;
+  margin: 2vh 0; 
+}
+
+.loading__div{
+  background: linear-gradient(to right, #31aae1 0%, #265ac2 100%);
+  padding: 3vh 10vw;
+  margin: 3vh;
+  border-radius: 20px;
+  box-shadow: 0 1px 10px #585858;
+}
+
+.loading__h1{
+  text-align: center;
+  margin-bottom: 3vh;
+}
+
+.divider{
+  margin: 3vh auto; 
+  height: 1px;
+  width: 20vw;
+  background: linear-gradient(to right, #31aae1 0%, #265ac2 100%);
 }

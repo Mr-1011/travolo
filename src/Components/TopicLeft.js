@@ -32,17 +32,21 @@ export default function TopicLeft({ title, description, svg, subTopic1, subTopic
         </div>
       </div>
       <div>
-        {checked ?
+        {checked && subTopic1 ?
           <Grow in={checked} {...(checked ? { timeout: 1000 } : {})}>
             <div>
               <div className='subcategory__div'>
                 <SubTopic info={subTopic1} />
                 <SubTopic info={subTopic2} />
               </div>
-              <div className='subcategory__div'>
-                <SubTopic info={subTopic3} />
-                <SubTopic info={subTopic4} />
-              </div>
+              {subTopic3 ?
+                <div className='subcategory__div'>
+                  <SubTopic info={subTopic3} />
+                  <SubTopic info={subTopic4} />
+                </div>
+                :
+                null
+              }
             </div>
           </Grow>
           :

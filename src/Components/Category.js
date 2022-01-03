@@ -40,7 +40,7 @@ export default function Category() {
         description={'You are obsessed with vibrant cities. High buildings, shopping in boutiques, find dinning in restaurant, a drink at a rooftop bar, and nightlife till the sun comes up this is your cup of tea.'}
         svg={City}
         subTopic1={'Shopping'}
-        subTopic2={'Skyscrappers'}
+        subTopic2={'Skyscrapper'}
         subTopic3={'Night Life'}
         subTopic4={'Fine Dinning'}
       />
@@ -57,7 +57,7 @@ export default function Category() {
 
       <TopicLeft
         title={'Adventure Seeker'}
-        description={'You love challenging and intense experience that give a sense of self accomplishment. Physical participation and adrenalin. Pushing your limits is your motto.'}
+        description={'You love challenging and intense experience that give a sense of self accomplishment. Physical participation and adrenaline. Pushing your limits is your motto.'}
         svg={Adventure}
         subTopic1={'Bungee Jumping'}
         subTopic2={'Skydiving'}
@@ -99,8 +99,8 @@ export default function Category() {
         title={'Group Traveler'}
         description={'You love to travel in a group and enjoy social aspect of travelling. You would rather stay instead of going alone. You probably do already have a friends group that goes on trips regularly.'}
         svg={Group}
-        subTopic1={''}
-        subTopic2={''}
+        subTopic1={'Friends'}
+        subTopic2={'Partner'}
         subTopic3={''}
         subTopic4={''}
       />
@@ -119,8 +119,8 @@ export default function Category() {
         title={'Backpack Traveler'}
         description={'You and your backpack that’s all you need to go on a trip. No endless waiting for your luggage. Just 3 T-shirts, 2 shorts, and socks. No commitment just short trips.'}
         svg={Backpack}
-        subTopic1={''}
-        subTopic2={''}
+        subTopic1={'Hostel'}
+        subTopic2={'Hitchhiking'}
         subTopic3={''}
         subTopic4={''}
       />
@@ -131,7 +131,7 @@ export default function Category() {
         svg={LongTerm}
         subTopic1={'Tax Advantage'}
         subTopic2={'Remote Work'}
-        subTopic3={'Digital Nomad'}
+        subTopic3={''}
         subTopic4={''}
       />
 
@@ -140,8 +140,8 @@ export default function Category() {
         description={'You and your camper are ready to go. Pack your stuff and don’t forget your map. You like seeing more than just one destination and the freedom to sleep and stay anywhere you want.'}
         svg={RoadTrip}
         subTopic1={'Camper'}
-        subTopic2={'Caravan'}
-        subTopic3={'Hitchhiking'}
+        subTopic2={'Hitchhiking'}
+        subTopic3={''}
         subTopic4={''}
       />
 

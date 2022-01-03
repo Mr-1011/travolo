@@ -36,12 +36,12 @@ export default function Sliders() {
       />
 
       <SliderComp
-        title='Adventure'
+        title='Adventure & Action'
         svg={Adventure}
       />
 
       <SliderComp
-        title='Road Trip & GO'
+        title='Road Trip & Camper'
         svg={RoadTrip}
       />
 

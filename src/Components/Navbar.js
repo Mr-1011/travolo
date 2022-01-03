@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Menu from '@mui/material/Menu';
 import IconButton from '@mui/material/IconButton';
 import MenuItem from '@mui/material/MenuItem';
@@ -6,9 +6,8 @@ import HelpIcon from '@mui/icons-material/Help';
 import MenuIcon from '@mui/icons-material/Menu';
 import { Link } from "react-router-dom";
 import '../Styling/Navbar.css'
-import { Button } from '@mui/material';
 
-export default function Navbar({ title, desc }) {
+export default function Navbar({ title, desc, pic }) {
 
     const [anchorEl, setAnchorEl] = useState(null);
     const open = Boolean(anchorEl);
@@ -74,9 +73,10 @@ export default function Navbar({ title, desc }) {
                     <div className='help__text__div'>
                         <h1 className='help__h1'>Quick guide</h1>
                         <p className='help__p'>{desc}</p>
-                        <div style={{ marginTop: "4vh" }}>
-                            <Button variant="contained" onClick={handleSubmit} size="large" sx={{ width: 160, backgroundColor: '#ffffff', color: '#000000' }}>got it</Button>
-                        </div>
+                        <img className='help__img' src={pic} alt=''></img>
+                        <button className='help__button' onClick={handleSubmit}>
+                            Got it
+                        </button>
                     </div>
                 </div>
                 :

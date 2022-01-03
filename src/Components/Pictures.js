@@ -59,9 +59,9 @@ export default function Pictures() {
               <div className='card__stop'>
                 <h1 className='card__stop__h1'>Continue?</h1>
                 <div className='card__buttons'>
-                  <button className='button__white' onClick={evenmore}>YES</button>
+                  <button className='button__white' onClick={evenmore}>yes</button>
                   <Link to='/category' className='next__link'>
-                    <button className='button__white'>NO</button>
+                    <button className='button__white'>no</button>
                   </Link>
                 </div>
               </div>
@@ -78,9 +78,9 @@ export default function Pictures() {
         <div className='card__stop'>
           <h1 className='card__stop__h1'>Continue?</h1>
           <div className='card__buttons'>
-            <button className='button__white' onClick={more}>YES</button>
+            <button className='button__white' onClick={more}>yes</button>
             <Link to='/category' className='next__link'>
-              <button className='button__white'>NO</button>
+              <button className='button__white'>no</button>
             </Link>
           </div>
         </div>
