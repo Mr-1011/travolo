@@ -4,6 +4,7 @@ import Navbar from './Navbar';
 import TopicRight from './TopicRight';
 import TopicLeft from './TopicLeft';
 import { Link } from "react-router-dom";
+import Pic from '../Data/help/Category-Tutorial.png'
 
 import Nature from '../Data/svg/Nature.svg'
 import City from '../Data/svg/City.svg'
@@ -24,7 +25,7 @@ export default function Category() {
 
   return (
     <main>
-      <Navbar title={'just choose'} desc={'just pic topics that you like'} />
+      <Navbar title={'just choose'} desc={'just pic topics that you like'} pic={Pic} />
       <TopicRight
         title={'Nature Wildlife'}
         description={'You like to be in the Nature. Chirping birds. Rippling water. A fresh breeze. Either activities to get you running or just sitting at a firepit. You are happy as long as you are outside.'}

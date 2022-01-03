@@ -18,7 +18,7 @@
   margin-bottom: 3vh;
 }
 
-.divider{
+.divider__horizontal{
   margin: 3vh auto; 
   height: 1px;
   width: 20vw;

@@ -3,6 +3,7 @@ import Navbar from './Navbar';
 import SliderComp from './SliderComp';
 import '../Styling/Sliders.css'
 import { Link } from "react-router-dom";
+import Pic from '../Data/help/Slider-Tutorial.png'
 
 import Nature from '../Data/svg/Nature.svg'
 import City from '../Data/svg/City.svg'
@@ -18,7 +19,7 @@ export default function Sliders() {
 
   return (
     <main>
-      <Navbar title={'just slide'} desc={'just put the slider on the following categories whether you like them or not'} />
+      <Navbar title={'just slide'} desc={'just put the slider on the following categories whether you like them or not'} pic={Pic} />
 
       <SliderComp
         title='Nature & Wildlife'

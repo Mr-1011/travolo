@@ -25,63 +25,69 @@ export default function Navbar({ title, desc, pic }) {
     }
 
     return (
-        <nav>
-            <div className='nav__center'>
-                <IconButton
-                    className='flexItem'
-                    aria-controls="basic-menu"
-                    aria-haspopup="true"
-                    aria-expanded={open ? 'true' : undefined}
-                    onClick={handleClick}
-                >
-                    <MenuIcon fontSize='large' className='nav__icon' />
-                </IconButton>
-                <Menu
-                    id="basic-menu"
-                    anchorEl={anchorEl}
-                    open={open}
-                    onClose={handleClose}
-                    MenuListProps={{
-                        'aria-labelledby': 'basic-button'
-                    }}
-                >
-                    <MenuItem>
-                        <Link to='/' className='link'>Swipe</Link>
-                    </MenuItem>
-                    <MenuItem>
-                        <Link to='/category' className='link'>Category</Link>
-                    </MenuItem>
-                    <MenuItem>
-                        <Link to='/sliders' className='link'>Slider</Link>
-                    </MenuItem>
-                    <MenuItem>
-                        <Link to='/profile' className='link'>Profiler</Link>
-                    </MenuItem>
-                    <MenuItem>
-                        <Link to='/dictionary' className='link'>Dictionary</Link>
-                    </MenuItem>
-                </Menu>
-                <h1 className='flexItem'>{title}</h1>
-                <IconButton className='flexItem'>
-                    <HelpIcon fontSize='large' className='nav__icon'
-                        onClick={handleSubmit}
-                    />
-                </IconButton>
+        <div>
+            <div className='div__nav'>
+                <div className='nav__center'>
+                    <IconButton
+                        className='flexItem'
+                        aria-controls="basic-menu"
+                        aria-haspopup="true"
+                        aria-expanded={open ? 'true' : undefined}
+                        onClick={handleClick}
+                    >
+                        <MenuIcon fontSize='large' className='nav__icon' />
+                    </IconButton>
+                    <Menu
+                        id="basic-menu"
+                        anchorEl={anchorEl}
+                        open={open}
+                        onClose={handleClose}
+                        MenuListProps={{
+                            'aria-labelledby': 'basic-button'
+                        }}
+                    >
+                        <MenuItem>
+                            <Link to='/' className='link'>Swipe</Link>
+                        </MenuItem>
+                        <MenuItem>
+                            <Link to='/category' className='link'>Category</Link>
+                        </MenuItem>
+                        <MenuItem>
+                            <Link to='/sliders' className='link'>Slider</Link>
+                        </MenuItem>
+                        <MenuItem>
+                            <Link to='/profile' className='link'>Profiler</Link>
+                        </MenuItem>
+                        <MenuItem>
+                            <Link to='/dictionary' className='link'>Dictionary</Link>
+                        </MenuItem>
+                    </Menu>
+                    <h1 className='flexItem'>{title}</h1>
+                    <IconButton className='flexItem'>
+                        <HelpIcon fontSize='large' className='nav__icon'
+                            onClick={handleSubmit}
+                        />
+                    </IconButton>
+                </div>
             </div>
             {checked ?
-                <div className='help__div'>
-                    <div className='help__text__div'>
-                        <h1 className='help__h1'>Quick guide</h1>
-                        <p className='help__p'>{desc}</p>
-                        <img className='help__img' src={pic} alt=''></img>
-                        <button className='help__button' onClick={handleSubmit}>
-                            Got it
-                        </button>
+                <div className='help__center'>
+                    <div className='help__block' />
+
+                    <div className='help__div'>
+                        <div className='help__text__div'>
+                            <h1 className='help__h1'>Quick guide</h1>
+                            <p className='help__p'>{desc}</p>
+                            <img className='help__img' src={pic} alt=''></img>
+                            <button className='help__button' onClick={handleSubmit}>
+                                Got it
+                            </button>
+                        </div>
                     </div>
                 </div>
                 :
                 null
             }
-        </nav>
+        </div>
     )
 }

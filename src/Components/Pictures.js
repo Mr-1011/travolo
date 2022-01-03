@@ -43,7 +43,7 @@ export default function Pictures() {
                 <h1 className='card__stop__h1'>Thats all for now</h1>
                 <div className='card__buttons'>
                   <Link to='/category' className='next__link'>
-                    <button className='button__white'>NEXT</button>
+                    <button className='button__white'>next</button>
                   </Link>
                 </div>
               </div>

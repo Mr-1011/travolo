@@ -7,14 +7,11 @@ import PinterestIcon from '@mui/icons-material/Pinterest';
 import GoogleIcon from '@mui/icons-material/Google';
 import { Link } from "react-router-dom";
 import LinearProgress from '@mui/material/LinearProgress';
+import Pic from '../Data/help/Profile-Tutorial.png'
 
 export default function Profile() {
 
   const [loading, setLoading] = useState(false);
-
-  const handleChange = () => {
-    setLoading(true)
-  }
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -23,7 +20,7 @@ export default function Profile() {
 
   return (
     <div>
-      <Navbar title={'just link'} desc={'just copy and paste links from either social media profiles or Google Drive links to let an algorithm scan them an analyze you interests'} />
+      <Navbar title={'just link'} desc={'just copy and paste links from either social media profiles or Google Drive links to let an algorithm scan them an analyze you interests'} pic={Pic} />
       {loading ?
         <div className='loading__div'>
           <h2 className='loading__h1'>Analyzing pictures</h2>
@@ -43,7 +40,7 @@ export default function Profile() {
         </form>
       </div>
 
-      <div className='divider' />
+      <div className='divider__horizontal' />
 
       <div className='profile__div'>
         <PinterestIcon sx={{ color: '#265ac2', fontSize: 50, marginRight: 1 }} />
@@ -56,7 +53,7 @@ export default function Profile() {
         </form>
       </div>
 
-      <div className='divider' />
+      <div className='divider__horizontal' />
 
       <div className='profile__div'>
         <GoogleIcon sx={{ color: '#265ac2', fontSize: 50, marginRight: 1 }} />

@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Autocomplete, TextField } from '@mui/material'
 import '../Styling/Dictionary.css'
 import Navbar from './Navbar'
 import words from '../Data/words'
 import { Link } from "react-router-dom";
+import Pic from '../Data/help/Dictionary-Tutorial.png'
 
 
 export default function Dictionary() {
@@ -16,7 +17,7 @@ export default function Dictionary() {
 
   return (
     <div>
-      <Navbar title={'just type'} desc={'just type categories you are looking for for your next vacation'} />
+      <Navbar title={'just type'} desc={'just type categories you are looking for for your next vacation'} pic={Pic} />
       <div className='dictionary__div'>
         <form onSubmit={handleSubmit}>
           <Autocomplete
