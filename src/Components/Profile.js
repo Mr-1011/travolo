@@ -68,7 +68,7 @@ export default function Profile() {
 
       <div className='next__div' style={{ marginTop: "4vh" }}>
         <Link to='/dictionary' className='next__link'>
-          <button className='button__next'>
+          <button className='button__next' style={{ marginBottom: '40vh' }}>
             NEXT
           </button>
         </Link>

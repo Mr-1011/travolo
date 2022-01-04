@@ -38,7 +38,7 @@ export default function Dictionary() {
       </div>
       <div className='next__div' style={{ marginTop: "4vh" }}>
         <Link to='/sliders' className='next__link' >
-          <button className='button__next'>
+          <button className='button__next' style={{ marginBottom: '70vh' }}>
             NEXT
           </button>
         </Link>
