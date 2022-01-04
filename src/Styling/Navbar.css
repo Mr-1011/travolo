@@ -83,7 +83,7 @@
 	margin-bottom: 5vh;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 600px) {
 	.desktop__view{
 		position: fixed;
 		background: linear-gradient(to right, #31aae1 0%, #265ac2 100%);
@@ -106,7 +106,7 @@
 	margin: 0 20vw;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
 	.desktop__view{
 		display: none;
 		visibility: hidden;
