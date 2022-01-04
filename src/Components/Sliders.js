@@ -68,12 +68,12 @@ export default function Sliders() {
 
       <div className='next__div'>
         <Link to='/profile' className='next__link'>
-          <button className='button__next'>
+          <button className='button__next' onClick={() => window.scrollTo({ top: 0 })} >
             NEXT
           </button>
         </Link>
       </div>
 
-    </main>
+    </main >
   )
 }

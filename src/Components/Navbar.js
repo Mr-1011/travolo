@@ -4,6 +4,8 @@ import IconButton from '@mui/material/IconButton';
 import MenuItem from '@mui/material/MenuItem';
 import HelpIcon from '@mui/icons-material/Help';
 import MenuIcon from '@mui/icons-material/Menu';
+import qr from '../Data/help/qr-code.svg';
+import Instructions from '../Data/help/Instructions.svg'
 import { Link } from "react-router-dom";
 import '../Styling/Navbar.css'
 
@@ -88,6 +90,11 @@ export default function Navbar({ title, desc, pic }) {
                 :
                 null
             }
+            <div className='desktop__view'>
+                <img className='desktop__svg' src={Instructions} />
+                <img className='desktop__img' src={qr} />
+                <h1>only on mobile</h1>
+            </div>
         </div>
     )
 }
