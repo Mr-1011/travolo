@@ -57,7 +57,7 @@ export default function Pictures() {
             :
             <>
               <div className='card__stop'>
-                <h1 className='card__stop__h1'>Continue?</h1>
+                <h1 className='card__stop__h1'>Do you want more?</h1>
                 <div className='card__buttons'>
                   <button className='button__white' onClick={evenmore}>yes</button>
                   <Link to='/category' className='next__link'>
@@ -76,7 +76,7 @@ export default function Pictures() {
         </>
         :
         <div className='card__stop'>
-          <h1 className='card__stop__h1'>Continue?</h1>
+          <h1 className='card__stop__h1'>Do you want more?</h1>
           <div className='card__buttons'>
             <button className='button__white' onClick={more}>yes</button>
             <Link to='/category' className='next__link'>
