@@ -1,4 +1,4 @@
-const data = [
+const pictureData = [
   {
     id: 1,
     img: require('./pictures/Forrest.png'),
@@ -151,4 +151,4 @@ const data = [
   }
 ]
 
-export default data;
+export default pictureData;

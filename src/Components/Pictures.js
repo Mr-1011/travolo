@@ -1,23 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import TinderCard from 'react-tinder-card';
 import '../Styling/Pictures.css';
-import database from '../firebase';
-import data from '../Data/data';
+import pictureData from '../Data/pictureData';
 import { Link } from "react-router-dom";
 
 export default function Pictures() {
-
-  const [picture, setPicture] = useState([{}]);
-
-  useEffect(() => {
-    const unsubscribe = database.collection('pictures').onSnapshot(snapshot => {
-      setPicture(snapshot.docs.map(doc => doc.data()))
-    })
-    return () => {
-      unsubscribe();
-    }
-  }, [])
-
 
   const [index, setIndex] = useState(0);
   const [cont, setCont] = useState(false);
@@ -48,7 +35,7 @@ export default function Pictures() {
                 </div>
               </div>
 
-              {data.slice(index, index + 10).map(pic => (
+              {pictureData.slice(index, index + 10).map(pic => (
                 <TinderCard className='swipe' key={pic.id} preventSwipe={['up', 'down']}>
                   <div className='card' style={{ backgroundImage: `url(${pic.img})` }} />
                 </TinderCard>
@@ -57,7 +44,7 @@ export default function Pictures() {
             :
             <>
               <div className='card__stop'>
-                <h1 className='card__stop__h1'>Do you want more?</h1>
+                <h1 className='card__stop__h1'>Do you want to see more pictures?</h1>
                 <div className='card__buttons'>
                   <button className='button__white' onClick={evenmore}>yes</button>
                   <Link to='/category' className='next__link'>
@@ -66,7 +53,7 @@ export default function Pictures() {
                 </div>
               </div>
 
-              {data.slice(index, index + 10).map(pic => (
+              {pictureData.slice(index, index + 10).map(pic => (
                 <TinderCard className='swipe' key={pic.id} preventSwipe={['up', 'down']}>
                   <div className='card' style={{ backgroundImage: `url(${pic.img})` }} />
                 </TinderCard>
@@ -76,7 +63,7 @@ export default function Pictures() {
         </>
         :
         <div className='card__stop'>
-          <h1 className='card__stop__h1'>Do you want more?</h1>
+          <h1 className='card__stop__h1'>Do you want to see more pictures?</h1>
           <div className='card__buttons'>
             <button className='button__white' onClick={more}>yes</button>
             <Link to='/category' className='next__link'>
@@ -86,17 +73,11 @@ export default function Pictures() {
         </div>
       }
 
-      {data.slice(index, 10).map(pic => (
+      {pictureData.slice(index, 10).map(pic => (
         <TinderCard className='swipe' key={pic.id} preventSwipe={['up', 'down']}>
           <div className='card' style={{ backgroundImage: `url(${pic.img})` }} />
         </TinderCard>
       ))}
-
-      {/* {picture.map(pic => (
-        <TinderCard className='swipe' key='key' preventSwipe={['up', 'down']}>
-          <div className='card' style={{ backgroundImage: `url(${pic.url})` }} />
-        </TinderCard>
-      ))} */}
 
     </div >
   )

@@ -1,4 +1,4 @@
-const words = [
+const dictionaryData = [
   { label: 'Abroad' },
   { label: 'Access' },
   { label: 'Accommodations' },
@@ -362,4 +362,4 @@ const words = [
   { label: 'Zoological' },
 ]
 
-export default words;
+export default dictionaryData;

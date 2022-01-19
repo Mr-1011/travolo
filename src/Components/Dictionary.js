@@ -2,14 +2,14 @@ import React, { useState } from 'react';
 import { Autocomplete, TextField } from '@mui/material'
 import '../Styling/Dictionary.css'
 import Navbar from './Navbar'
-import words from '../Data/words'
+import dictionaryData from '../Data/dictionaryData'
 import { Link } from "react-router-dom";
 import Pic from '../Data/help/Dictionary-Tutorial.png'
 
 
 export default function Dictionary() {
 
-  const [dictionary, setDictionary] = useState(words)
+  const [dictionary, setDictionary] = useState(dictionaryData)
 
   const handleSubmit = (e) => {
     e.preventDefault()
