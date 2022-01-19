@@ -27,6 +27,9 @@ function App() {
           <Route path='/dictionary' element={
             <Dictionary />
           } />
+          <Route path='/de/Swipe' element={
+            <Swipe />
+          } />
         </Routes>
       </Router>
     </div>

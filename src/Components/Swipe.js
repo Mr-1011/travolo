@@ -11,19 +11,20 @@ export default function Swipe() {
 
   const handleSubmit = () => {
     setChecked(false);
+    window.scrollTo({ top: 0 })
   }
 
   return (
     <main>
       {checked ?
         <div className='intro__center'>
-          <div className='intro__block' />
           <div className='intro__div'>
             <h1 className='intro__h1'>
               Travolo
             </h1>
             <p className='intro__p'>
-              Welcome, you will now see 5 different models to find out what your travel interests really are.
+              <b>Welcome</b> <br />
+              You will now see 5 different models to find out what your travel interests really are.
               The objective of this project is to find new ways of questioning, you will therefore unfortunately not receive any recommendations yet.
               No data will be stored or received by us. Test our models and take part on our survey.
             </p>
