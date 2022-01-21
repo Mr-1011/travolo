@@ -58,3 +58,17 @@
 	font-family: Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
     sans-serif;
 }
+
+.liked__div{
+	position: absolute;
+	top: 50vh;
+	right: 10vw;
+	z-index: 4;
+}
+
+.disliked__div{
+	position: absolute;
+	top: 50vh;
+	left: 10vw;
+	z-index: 4;
+}

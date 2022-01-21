@@ -58,17 +58,12 @@ export default function Navbar({ title, desc, pic }) {
                             <Link to='/sliders' className='link'>Slider</Link>
                         </MenuItem>
                         <MenuItem>
-                            <Link to='/profile' className='link'>Profiler</Link>
-                        </MenuItem>
-                        <MenuItem>
                             <Link to='/dictionary' className='link'>Dictionary</Link>
                         </MenuItem>
                     </Menu>
                     <h1 className='flexItem'>{title}</h1>
-                    <IconButton className='flexItem'>
-                        <HelpIcon fontSize='large' className='nav__icon'
-                            onClick={handleSubmit}
-                        />
+                    <IconButton className='flexItem' onClick={handleSubmit}>
+                        <HelpIcon fontSize='large' className='nav__icon' />
                     </IconButton>
                 </div>
             </div>

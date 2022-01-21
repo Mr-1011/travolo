@@ -17,11 +17,47 @@ export default function Pictures() {
 
   const evenmore = () => {
     setEnd(!end);
-    setIndex(index + 10)
+    setIndex(index + 15)
+  }
+
+  const [showLike, setShowLike] = useState(false);
+  const [showDislike, setShowDislike] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setShowLike(false)
+      setShowDislike(false)
+    }, 1000);
+  }, [showLike, showDislike])
+
+  const onSwipe = (direction) => {
+    if (direction === 'right') {
+      setShowLike(true)
+    }
+    else {
+      setShowDislike(true)
+    }
   }
 
   return (
     <div className='pictures__div'>
+      {showLike ?
+        <div className='liked__div'>
+          <h1>Liked</h1>
+        </div>
+        :
+        null
+      }
+
+      {showDislike ?
+        <div className='disliked__div'>
+          <h1>Disliked</h1>
+        </div>
+        :
+        null
+      }
+
+
       {cont ?
         <>
           {end ?
@@ -35,8 +71,8 @@ export default function Pictures() {
                 </div>
               </div>
 
-              {pictureData.slice(index, index + 10).map(pic => (
-                <TinderCard className='swipe' key={pic.id} preventSwipe={['up', 'down']}>
+              {pictureData.slice(index, index + 12).map(pic => (
+                <TinderCard className='swipe' key={pic.id} preventSwipe={['up', 'down']} onSwipe={onSwipe}>
                   <div className='card' style={{ backgroundImage: `url(${pic.img})` }} />
                 </TinderCard>
               ))}
@@ -53,8 +89,8 @@ export default function Pictures() {
                 </div>
               </div>
 
-              {pictureData.slice(index, index + 10).map(pic => (
-                <TinderCard className='swipe' key={pic.id} preventSwipe={['up', 'down']}>
+              {pictureData.slice(index, index + 15).map(pic => (
+                <TinderCard className='swipe' key={pic.id} preventSwipe={['up', 'down']} onSwipe={onSwipe}>
                   <div className='card' style={{ backgroundImage: `url(${pic.img})` }} />
                 </TinderCard>
               ))}
@@ -74,7 +110,7 @@ export default function Pictures() {
       }
 
       {pictureData.slice(index, 10).map(pic => (
-        <TinderCard className='swipe' key={pic.id} preventSwipe={['up', 'down']}>
+        <TinderCard className='swipe' key={pic.id} preventSwipe={['up', 'down']} onSwipe={onSwipe}>
           <div className='card' style={{ backgroundImage: `url(${pic.img})` }} />
         </TinderCard>
       ))}

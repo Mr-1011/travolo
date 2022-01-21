@@ -136,8 +136,8 @@ const pictureData = [
   },
   {
     id: 28,
-    img: require('./pictures/Hinking.png'),
-    desc: 'Hinking',
+    img: require('./pictures/Hiking.png'),
+    desc: 'Hiking',
   },
   {
     id: 29,
@@ -148,6 +148,43 @@ const pictureData = [
     id: 30,
     img: require('./pictures/Parachute.png'),
     desc: 'Parachute',
+  },
+  {
+    id: 31,
+    img: require('./pictures/City-Night.png'),
+    desc: 'City Night',
+  },
+  {
+    id: 32,
+    img: require('./pictures/Climbing.png'),
+    desc: 'Climbing',
+  },
+  {
+    id: 33,
+    img: require('./pictures/Cruise-Ship.png'),
+    desc: 'Cruise-Ship',
+  },
+  {
+    id: 34,
+    img: require('./pictures/Dune.png'),
+    desc: 'Dune',
+  },
+  {
+    id: 35,
+    img: require('./pictures/Mountain-Lake.png'),
+    desc: 'Mountain Lake',
+  }
+
+  ,
+  {
+    id: 36,
+    img: require('./pictures/Night-City-Lake.png'),
+    desc: 'Night City Lake',
+  },
+  {
+    id: 37,
+    img: require('./pictures/Spa.png'),
+    desc: 'Spa',
   }
 ]
 

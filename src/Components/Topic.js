@@ -5,7 +5,7 @@ import SubTopic from './SubTopic';
 import '../Styling/Category.css'
 
 
-export default function TopicRight({ title, description, svg, subTopic1, subTopic2, subTopic3, subTopic4 }) {
+export default function Topic({ title, description, svg, subTopic1, subTopic2, subTopic3, subTopic4 }) {
 
   const [checked, setChecked] = useState(false);
 
