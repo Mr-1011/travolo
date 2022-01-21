@@ -5,12 +5,14 @@ import Topic from './Topic';
 import { Link } from "react-router-dom";
 import Pic from '../Data/help/Category-Tutorial.png'
 import categoryData from '../Data/categoryData';
+import i18next from 'i18next';
+import { initReactI18next, useTranslation } from 'react-i18next';
 
 export default function Category() {
+  const { t } = useTranslation();
   return (
     <main>
-      <Navbar title={'just choose'} desc={'just click your way through personas and categories you like'} pic={Pic} />
-
+      <Navbar title={'just choose'} desc={t('tutorial2')} pic={Pic} />
       {categoryData.map(category => (
         <Topic
           title={category.title}
