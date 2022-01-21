@@ -61,14 +61,16 @@
 
 .liked__div{
 	position: absolute;
-	top: 50vh;
+	text-align: center;
+	top: 45vh;
 	right: 10vw;
 	z-index: 4;
 }
 
 .disliked__div{
 	position: absolute;
-	top: 50vh;
+	text-align: center;
+	top: 45vh;
 	left: 10vw;
 	z-index: 4;
 }

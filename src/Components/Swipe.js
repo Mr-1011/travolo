@@ -23,14 +23,13 @@ export default function Swipe() {
               Travolo
             </h1>
             <p className='intro__p'>
-              <b>Welcome</b> <br />
               You will now see 5 different models to find out what your travel interests really are.
               The objective of this project is to find new ways of questioning, you will therefore unfortunately not receive any recommendations yet.
               No data will be stored or received by us. Test our models and take part on our survey.
             </p>
             <img className='intro__img' src={Intro} />
             <button className='intro__button' onClick={handleSubmit}>
-              Let's Start
+              Start
             </button>
           </div>
         </div>

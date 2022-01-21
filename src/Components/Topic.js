@@ -15,7 +15,7 @@ export default function Topic({ title, description, svg, subTopic1, subTopic2, s
 
   return (
     <div>
-      <div className='categoryright__div'>
+      <div className='category__div'>
         <div className='checkbox' >
           <Checkbox onChange={handleChange} sx={{
             color: 'white',

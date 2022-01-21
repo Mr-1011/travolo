@@ -3,6 +3,8 @@ import TinderCard from 'react-tinder-card';
 import '../Styling/Pictures.css';
 import pictureData from '../Data/pictureData';
 import { Link } from "react-router-dom";
+import ThumbUpIcon from '@mui/icons-material/ThumbUp';
+import ThumbDownAltIcon from '@mui/icons-material/ThumbDownAlt';
 
 export default function Pictures() {
 
@@ -23,19 +25,18 @@ export default function Pictures() {
   const [showLike, setShowLike] = useState(false);
   const [showDislike, setShowDislike] = useState(false);
 
-  useEffect(() => {
-    setTimeout(() => {
-      setShowLike(false)
-      setShowDislike(false)
-    }, 1000);
-  }, [showLike, showDislike])
-
   const onSwipe = (direction) => {
     if (direction === 'right') {
       setShowLike(true)
+      setTimeout(() => {
+        setShowLike(false)
+      }, 1000);
     }
     else {
       setShowDislike(true)
+      setTimeout(() => {
+        setShowDislike(false)
+      }, 1000);
     }
   }
 
@@ -44,6 +45,7 @@ export default function Pictures() {
       {showLike ?
         <div className='liked__div'>
           <h1>Liked</h1>
+          <ThumbUpIcon fontSize='large' />
         </div>
         :
         null
@@ -52,6 +54,7 @@ export default function Pictures() {
       {showDislike ?
         <div className='disliked__div'>
           <h1>Disliked</h1>
+          <ThumbDownAltIcon fontSize='large' />
         </div>
         :
         null

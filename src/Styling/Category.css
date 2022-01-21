@@ -1,17 +1,8 @@
-.categoryright__div {
+.category__div {
 	background-image: linear-gradient(to right, #31aae1 0%, #265ac2 100%);
 	padding: 2vh;
 	margin: 3vh;
-	border-radius: 20px;
-	box-shadow: 0 1px 10px #585858;
-	position: relative;
-}
-
-.categoryleft__div {
-	background-image: linear-gradient(to right, #265ac2 0%, #31aae1 100%);
-	padding: 2vh;
-	margin: 3vh;
-	border-radius: 20px;
+	border-radius: 15px;
 	box-shadow: 0 1px 10px #585858;
 	position: relative;
 }

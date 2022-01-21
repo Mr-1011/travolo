@@ -9,7 +9,7 @@ import categoryData from '../Data/categoryData';
 export default function Category() {
   return (
     <main>
-      <Navbar title={'just choose'} desc={'just pic topics that you like'} pic={Pic} />
+      <Navbar title={'just choose'} desc={'just click your way through personas and categories you like'} pic={Pic} />
 
       {categoryData.map(category => (
         <Topic
