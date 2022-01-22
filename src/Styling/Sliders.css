@@ -18,13 +18,13 @@
 
 .slider__p{
   display: flex;
-  justify-content:  space-between;
+  justify-content: space-between;
 }
 
 .slider__svg {
   height: 10vh;
   max-width: 30vw;
-  margin: 0 2vw 2vh 8vw;
+  margin: 0 2vw 1vh 8vw;
 }
 
 .slider__title{

@@ -23,7 +23,7 @@ export default function SliderComp({ title, svg }) {
           value={value}
           onChange={handleChange}
           sx={{
-            width: 250,
+            width: 255,
             color: 'white',
           }}
         />

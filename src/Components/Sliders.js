@@ -4,23 +4,41 @@ import SliderComp from './SliderComp';
 import '../Styling/Sliders.css'
 import { Link } from "react-router-dom";
 import Pic from '../Data/help/Slider-Tutorial.png'
-import sliderData from '../Data/sliderData';
+import sliderDataEN from '../Data/sliderDataEN';
+import sliderDataDE from '../Data/sliderDataDE';
 import i18next from 'i18next';
 import { useTranslation } from 'react-i18next';
 
 export default function Sliders() {
   const { t } = useTranslation();
 
+  if (i18next.language === 'en') {
+
+  }
+  else {
+
+  }
+
   return (
     <main>
       <Navbar title={'just slide'} desc={t('sliderTutorial')} pic={Pic} />
 
-      {sliderData.map(slid => (
-        <SliderComp
-          title={slid.title}
-          svg={slid.svg}
-        />
-      ))}
+      {i18next.language === 'en' ?
+        sliderDataEN.map(slid => (
+          <SliderComp
+            title={slid.title}
+            svg={slid.svg}
+          />
+        ))
+        :
+        sliderDataDE.map(slid => (
+          <SliderComp
+            title={slid.title}
+            svg={slid.svg}
+          />
+        ))
+      }
+
 
       <div className='next__div'>
         <Link to='/dictionary' className='next__link'>

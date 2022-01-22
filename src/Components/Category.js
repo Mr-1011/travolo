@@ -4,7 +4,9 @@ import Navbar from './Navbar';
 import Topic from './Topic';
 import { Link } from "react-router-dom";
 import Pic from '../Data/help/Category-Tutorial.png'
-import categoryData from '../Data/categoryData';
+import categoryDataEN from '../Data/categoryDataEN';
+import categoryDataDE from '../Data/categoryDataDE';
+import i18next from 'i18next';
 import { useTranslation } from 'react-i18next';
 
 export default function Category() {
@@ -12,17 +14,32 @@ export default function Category() {
   return (
     <main>
       <Navbar title={'just choose'} desc={t('categoryTutorial')} pic={Pic} />
-      {categoryData.map(category => (
-        <Topic
-          title={category.title}
-          description={category.description}
-          svg={category.svg}
-          subTopic1={category.subTopic1}
-          subTopic2={category.subTopic2}
-          subTopic3={category.subTopic3}
-          subTopic4={category.subTopic4}
-        />
-      ))}
+
+      {i18next.language === 'en' ?
+        categoryDataEN.map(category => (
+          <Topic
+            title={category.title}
+            description={category.description}
+            svg={category.svg}
+            subTopic1={category.subTopic1}
+            subTopic2={category.subTopic2}
+            subTopic3={category.subTopic3}
+            subTopic4={category.subTopic4}
+          />
+        ))
+        :
+        categoryDataDE.map(category => (
+          <Topic
+            title={category.title}
+            description={category.description}
+            svg={category.svg}
+            subTopic1={category.subTopic1}
+            subTopic2={category.subTopic2}
+            subTopic3={category.subTopic3}
+            subTopic4={category.subTopic4}
+          />
+        ))
+      }
 
       <div className='next__div'>
         <Link to='/sliders' className='next__link'>

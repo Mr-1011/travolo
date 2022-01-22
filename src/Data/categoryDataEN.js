@@ -12,9 +12,9 @@ import LongTerm from '../Data/svg/Long-Term.svg'
 import RoadTrip from '../Data/svg/Road-Trip.svg'
 import Chill from '../Data/svg/Chill.svg'
 
-const categoryData = [
+const categoryDataEN = [
   {
-    title: 'Nature Wildlife',
+    title: 'Nature Wildlifer',
     description: 'You like to be in the Nature. Chirping birds. Rippling water. A fresh breeze. Either activities to get you running or just sitting at a firepit. You are happy as long as you are outside.',
     svg: Nature,
     subTopic1: 'Forest',
@@ -33,7 +33,7 @@ const categoryData = [
   },
   {
     title: 'Culture Lover',
-    description: 'You travel to immerse yourself in the local culture and cherish the cultural experiences. Cultural enrichment, connecting with locals of that place that’s what you are looking for.',
+    description: 'You travel to immerse yourself in the local culture and cherish the cultural experiences. Cultural enrichment, connecting with locals that’s what you are looking for.',
     svg: Culture,
     subTopic1: 'Museum',
     subTopic2: 'Sightseeing',
@@ -48,6 +48,15 @@ const categoryData = [
     subTopic2: 'Skydiving',
     subTopic3: 'Rockclimbing',
     subTopic4: 'Diving',
+  },
+  {
+    title: 'Just Chilling',
+    description: 'You like to chill relax and enjoy you trip to the fullest at your accommodation. Could be a full all-inclusive resort. Or a trip to a spa. Anything to get you away from the daily stress.',
+    svg: Chill,
+    subTopic1: 'Resort',
+    subTopic2: 'Spa',
+    subTopic3: 'Cruise Ship',
+    subTopic4: 'Meditation',
   },
   {
     title: 'Party Seeker',
@@ -66,15 +75,6 @@ const categoryData = [
     subTopic2: 'Festival',
     subTopic3: 'Sport Event',
     subTopic4: 'Convention',
-  },
-  {
-    title: 'Budget Traveler',
-    description: 'You know all the websites to find the cheapest flights and deals. You plan and save money for vacation. You also know that you don’t have to spend a lot to enjoy your trip.',
-    svg: Budget,
-    subTopic1: '',
-    subTopic2: '',
-    subTopic3: '',
-    subTopic4: '',
   },
   {
     title: 'Group Traveler',
@@ -104,15 +104,6 @@ const categoryData = [
     subTopic4: '',
   },
   {
-    title: 'Long Term',
-    description: 'Your job allows you to travel for months. All you need is your laptop, and you are ready to go. A trip for you only starts with taking a few months. This becomes more of a lifestyle than a trip.',
-    svg: LongTerm,
-    subTopic1: 'Tax Advantage',
-    subTopic2: 'Remote Work',
-    subTopic3: '',
-    subTopic4: '',
-  },
-  {
     title: 'Road Trip',
     description: 'You and your camper are ready to go. Pack your stuff and don’t forget your map. You like seeing more than just one destination and the freedom to sleep and stay anywhere you want.',
     svg: RoadTrip,
@@ -122,14 +113,23 @@ const categoryData = [
     subTopic4: '',
   },
   {
-    title: 'Just Chilling',
-    description: 'You like to chill relax and enjoy you trip to the fullest at your accommodation. Could be a full all-inclusive resort. Or a trip to a spa. Anything to get you away from the daily stress.',
-    svg: Chill,
-    subTopic1: 'Resort',
-    subTopic2: 'Spa',
-    subTopic3: 'Cruise Ship',
-    subTopic4: 'Meditation',
+    title: 'Budget Traveler',
+    description: 'You know all the websites to find the cheapest flights and deals. You plan and save money for vacation. You also know that you don’t have to spend a lot to enjoy your trip.',
+    svg: Budget,
+    subTopic1: '',
+    subTopic2: '',
+    subTopic3: '',
+    subTopic4: '',
+  },
+  {
+    title: 'Long Term',
+    description: 'Your job allows you to travel for months. All you need is your laptop, and you are ready to go. A trip for you only starts with taking a few months. This becomes more of a lifestyle than a trip.',
+    svg: LongTerm,
+    subTopic1: 'Tax Advantage',
+    subTopic2: 'Remote Work',
+    subTopic3: '',
+    subTopic4: '',
   }
 ]
 
-export default categoryData;
+export default categoryDataEN;

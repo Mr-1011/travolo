@@ -8,7 +8,7 @@ import Backpack from '../Data/svg/Backpack.svg'
 import RoadTrip from '../Data/svg/Road-Trip.svg'
 import Chill from '../Data/svg/Chill.svg'
 
-const sliderData = [
+const sliderDataEN = [
   {
     title: 'Nature & Wildlife',
     svg: Nature,
@@ -34,7 +34,7 @@ const sliderData = [
     svg: Event,
   },
   {
-    title: 'Event & Festivals',
+    title: 'Events & Festivals',
     svg: Backpack,
   },
   {
@@ -47,4 +47,4 @@ const sliderData = [
   }
 ]
 
-export default sliderData;
+export default sliderDataEN;
