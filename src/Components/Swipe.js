@@ -6,24 +6,15 @@ import Intro from '../Data/help/Intro.png'
 import '../Styling/Swipe.css'
 import i18next from 'i18next';
 import { initReactI18next, useTranslation } from 'react-i18next';
-
-const translationEn = {
-  intro: 'Welcome. You will now see 4 different models to find out what your travel interests really are. The objective of this project is to find new ways of questioning, you will therefore unfortunately not receive any recommendations yet. No data will be stored or received by us. Test our models and take part on our survey.',
-  tutorial: 'just swipe right if you like what you see and left if you dont',
-  tutorial2: 'just click your way through personas and categories you like'
-}
-const translationDe = {
-  intro: 'Willkommen. Sie werden nun 4 verschiedene Modelle sehen, um herauszufinden, was Ihre Reiseinteressen wirklich sind. Das Ziel dieses Projektes ist es, neue Wege der Befragung zu finden, daher werden Sie leider noch keine Empfehlungen erhalten. Es werden keine Daten gespeichert oder von uns erhalten. Testen Sie unsere Modelle und nehmen Sie an unserer Umfrage teil. ',
-  tutorial: 'swipe nach rechts wenn dir gefällt was du sieht oder links wenn nicht',
-  tutorial2: 'Klicke dich einfach durch die Personas und Kategorien und wähle aus was dir gefällt'
-}
+import translationEN from '../Translation/translationEN'
+import translationDE from '../Translation/translationDE'
 
 i18next
   .use(initReactI18next)
   .init({
     resources: {
-      en: { translation: translationEn },
-      de: { translation: translationDe },
+      en: { translation: translationEN },
+      de: { translation: translationDE },
     },
     lng: 'en',
     fallbackLng: 'en',
@@ -51,13 +42,13 @@ export default function Swipe() {
       {checked ?
         <div className='intro__center'>
           <div className='intro__div'>
-            <h1 className='intro__h1'>
-              Travolo
-            </h1>
-            <select name='language' onChange={onChange}>
+            <select className='language__select' name='language' onChange={onChange}>
               <option value='en'>English</option>
               <option value='de'>Deutsch</option>
             </select>
+            <h1 className='intro__h1'>
+              Travolo
+            </h1>
             <p className='intro__p'>
               {t('intro')}
             </p>
