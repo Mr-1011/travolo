@@ -5,9 +5,10 @@ import Navbar from './Navbar'
 import dictionaryData from '../Data/dictionaryData'
 import { Link } from "react-router-dom";
 import Pic from '../Data/help/Dictionary-Tutorial.png'
-
+import { useTranslation } from 'react-i18next';
 
 export default function Dictionary() {
+  const { t } = useTranslation();
 
   const [dictionary, setDictionary] = useState(dictionaryData)
 
@@ -17,7 +18,7 @@ export default function Dictionary() {
 
   return (
     <div>
-      <Navbar title={'just type'} desc={'just type categories you are looking for for your next vacation'} pic={Pic} />
+      <Navbar title={'just type'} desc={t('dictionaryTutorial')} pic={Pic} />
       <div className='dictionary__div'>
         <form onSubmit={handleSubmit}>
           <Autocomplete
@@ -29,8 +30,8 @@ export default function Dictionary() {
             renderInput={(params) => (
               <TextField
                 {...params}
-                label="What are you looking for?"
-                placeholder="Interests"
+                label={t('fieldTitle')}
+                placeholder={t('fieldPlaceholder')}
               />
             )}
           />
@@ -39,7 +40,7 @@ export default function Dictionary() {
       <div className='next__div' style={{ marginTop: "4vh" }}>
         <Link to='/sliders' className='next__link' >
           <button className='button__next' style={{ marginBottom: '70vh' }}>
-            NEXT
+            {t('NEXT')}
           </button>
         </Link>
       </div>

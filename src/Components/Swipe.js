@@ -61,7 +61,7 @@ export default function Swipe() {
         :
         null
       }
-      <Navbar title={'just swipe'} desc={t('tutorial')} pic={Pic} />
+      <Navbar title={'just swipe'} desc={t('swipeTutorial')} pic={Pic} />
       <Pictures />
     </main>
   )

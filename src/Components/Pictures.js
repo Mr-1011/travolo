@@ -5,8 +5,10 @@ import pictureData from '../Data/pictureData';
 import { Link } from "react-router-dom";
 import ThumbUpIcon from '@mui/icons-material/ThumbUp';
 import ThumbDownAltIcon from '@mui/icons-material/ThumbDownAlt';
+import { useTranslation } from 'react-i18next';
 
 export default function Pictures() {
+  const { t } = useTranslation();
 
   const [index, setIndex] = useState(0);
   const [cont, setCont] = useState(false);
@@ -66,10 +68,10 @@ export default function Pictures() {
           {end ?
             <>
               <div className='card__stop'>
-                <h1 className='card__stop__h1'>Thats all for now</h1>
+                <h1 className='card__stop__h1'>{t('swipeEnd')}</h1>
                 <div className='card__buttons'>
                   <Link to='/category' className='next__link'>
-                    <button className='button__white'>next</button>
+                    <button className='button__white'>{t('next')}</button>
                   </Link>
                 </div>
               </div>
@@ -83,11 +85,11 @@ export default function Pictures() {
             :
             <>
               <div className='card__stop'>
-                <h1 className='card__stop__h1'>Do you want to see more pictures?</h1>
+                <h1 className='card__stop__h1'>{t('swipeMore')}</h1>
                 <div className='card__buttons'>
-                  <button className='button__white' onClick={evenmore}>yes</button>
+                  <button className='button__white' onClick={evenmore}>{t('yes')}</button>
                   <Link to='/category' className='next__link'>
-                    <button className='button__white'>no</button>
+                    <button className='button__white'>{t('no')}</button>
                   </Link>
                 </div>
               </div>
@@ -102,11 +104,11 @@ export default function Pictures() {
         </>
         :
         <div className='card__stop'>
-          <h1 className='card__stop__h1'>Do you want to see more pictures?</h1>
+          <h1 className='card__stop__h1'>{t('swipeMore')}</h1>
           <div className='card__buttons'>
-            <button className='button__white' onClick={more}>yes</button>
+            <button className='button__white' onClick={more}>{t('yes')}</button>
             <Link to='/category' className='next__link'>
-              <button className='button__white'>no</button>
+              <button className='button__white'>{t('no')}</button>
             </Link>
           </div>
         </div>

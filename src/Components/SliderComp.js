@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import Slider from '@mui/material/Slider';
 import '../Styling/Sliders.css';
+import { useTranslation } from 'react-i18next';
 
 export default function SliderComp({ title, svg }) {
+  const { t } = useTranslation();
 
   const [value, setValue] = useState(50);
 
@@ -27,8 +29,8 @@ export default function SliderComp({ title, svg }) {
         />
       </div>
       <div className='slider__p'>
-        <p>hate it</p>
-        <p>love it</p>
+        <p>{t('hate')}</p>
+        <p>{t('love')}</p>
       </div>
     </div >
   )
