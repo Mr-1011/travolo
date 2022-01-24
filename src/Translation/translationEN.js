@@ -12,7 +12,7 @@ const translationEN = {
   swipeEnd: "Thats all for now",
 
   //Category
-  categoryTutorial: "just click your way through personas and categories you like",
+  categoryTutorial: "just choose what you like and click your way through categories",
 
   //Slider
   sliderTutorial: "just put the slider on the following categories whether you like them or not",

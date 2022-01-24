@@ -18,6 +18,7 @@ export default function Category() {
       {i18next.language === 'en' ?
         categoryDataEN.map(category => (
           <Topic
+            key={category.id}
             title={category.title}
             description={category.description}
             svg={category.svg}
@@ -30,6 +31,7 @@ export default function Category() {
         :
         categoryDataDE.map(category => (
           <Topic
+            key={category.id}
             title={category.title}
             description={category.description}
             svg={category.svg}

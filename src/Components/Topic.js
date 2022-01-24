@@ -23,12 +23,13 @@ export default function Topic({ title, description, svg, subTopic1, subTopic2, s
           }} />
         </div>
         <div className='category__info'>
-          <img className='category__svg' src={svg} alt={''} />
+          <img className='category__svg' src={svg} alt={title} />
           <div className='divider' />
           <div className='category__text'>
-            <h3 style={{ margin: '10px 0 5px 0' }}>{title}</h3>
-            <p style={{ fontSize: '80%' }}>{description}</p>
+            <h1 className='category__h1' >{title}</h1>
+            <p className='category__p' >{description}</p>
           </div>
+
         </div>
       </div>
       <div>
