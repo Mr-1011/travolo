@@ -37,12 +37,12 @@
 
 .intro__p{
 	margin: 2vh 8vw;
-	font-size: large;
+	font-size: 100%;
 	text-align: left;
 }
 
 .intro__img{
-	width: 88vw;
+	width: 80vw;
 	margin: 1vh 0 2vh 0;
 }
 

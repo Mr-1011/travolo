@@ -31,8 +31,8 @@ const pictureData = [
   },
   {
     id: 7,
-    img: require('./pictures/Columns.png'),
-    desc: 'Columns',
+    img: require('./pictures/Party.png'),
+    desc: 'Party',
   },
   {
     id: 8,
@@ -173,18 +173,31 @@ const pictureData = [
     id: 35,
     img: require('./pictures/Mountain-Lake.png'),
     desc: 'Mountain Lake',
-  }
-
-  ,
+  },
   {
     id: 36,
+    img: require('./pictures/Columns.png'),
+    desc: 'Columns',
+  },
+  {
+    id: 37,
     img: require('./pictures/Night-City-Lake.png'),
     desc: 'Night City Lake',
   },
   {
-    id: 37,
+    id: 38,
     img: require('./pictures/Spa.png'),
     desc: 'Spa',
+  },
+  {
+    id: 39,
+    img: require('./pictures/Shopping.png'),
+    desc: 'Shopping',
+  },
+  {
+    id: 40,
+    img: require('./pictures/Event.png'),
+    desc: 'Event',
   }
 ]
 

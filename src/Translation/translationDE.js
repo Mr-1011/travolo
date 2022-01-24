@@ -1,13 +1,13 @@
 const translationDE = {
   //General
-  intro: "Willkommen. Sie werden nun 4 verschiedene Modelle sehen, um herauszufinden, was Ihre Reiseinteressen wirklich sind. Das Ziel dieses Projektes ist es, neue Wege der Befragung zu finden, daher werden Sie leider noch keine Empfehlungen erhalten. Es werden keine Daten gespeichert oder von uns erhalten. Testen Sie unsere Modelle und nehmen Sie an unserer Umfrage teil.",
+  intro: "Willkommen. Du wirst nun 4 verschiedene Befragungsmodelle sehen, die deine Reiseinteressen auf neue Weise erfassen. Ziel dieses Projektes ist es, neue Befragungsmethoden zu testen, du wirst daher leider noch keine Empfehlungen zu Reiseorten, die zu dir passen, erhalten. Es werden keine Daten gespeichert oder von uns empfangen. Teste unsere Modelle und nehme anschließend an unserer Umfrage teil.",
   yes: "ja",
   no: "nein",
   next: "weiter",
   NEXT: "WEITER",
 
   //Swipe
-  swipeTutorial: "Swipe nach rechts wenn dir gefällt was du sieht oder links wenn nicht",
+  swipeTutorial: "swipe nach rechts, wenn dir gefällt was du sieht oder links, wenn nicht",
   swipeMore: "Willst du mehr Bilder sehen?",
   swipeEnd: "Das war es für jetzt",
 
