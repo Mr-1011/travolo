@@ -11,7 +11,7 @@ export default function SubTopic({ info, check }) {
           '&.Mui-checked': { color: 'white' }
         }} />
       </div>
-      <p>{info}</p>
+      <p className='subTopic__p'>{info}</p>
     </div>
   )
 }

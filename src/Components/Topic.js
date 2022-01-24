@@ -5,12 +5,17 @@ import SubTopic from './SubTopic';
 import '../Styling/Category.css'
 
 
-export default function Topic({ title, description, svg, subTopic1, subTopic2, subTopic3, subTopic4 }) {
+export default function Topic({ title, description, svg, subTopic1, subTopic2, subTopic3, subTopic4, subTopic5, subTopic6, subTopic7, subTopic8 }) {
 
   const [checked, setChecked] = useState(false);
+  const [more, setMore] = useState(false);
 
   const handleChange = (event) => {
     setChecked(event.target.checked);
+  }
+
+  const handleMore = () => {
+    setMore(true);
   }
 
   return (
@@ -41,10 +46,42 @@ export default function Topic({ title, description, svg, subTopic1, subTopic2, s
                 <SubTopic info={subTopic2} />
               </div>
               {subTopic3 ?
-                <div className='subcategory__div'>
-                  <SubTopic info={subTopic3} />
-                  <SubTopic info={subTopic4} />
-                </div>
+                <Grow in={checked} {...(checked ? { timeout: 1000 } : {})}>
+                  <div className='subcategory__div'>
+                    <SubTopic info={subTopic3} />
+                    <SubTopic info={subTopic4} />
+                  </div>
+                </Grow>
+                :
+                null
+              }
+              {subTopic5 && !more ?
+                <Grow in={checked} {...(checked ? { timeout: 1000 } : {})}>
+                  <div className='subcategory__div'>
+                    <button className='subcategory__button' onClick={handleMore}>more</button>
+                  </div>
+                </Grow>
+                :
+                null
+              }
+              {more ?
+                <Grow in={checked} {...(checked ? { timeout: 1000 } : {})}>
+                  <div>
+                    <div className='subcategory__div'>
+                      <SubTopic info={subTopic5} />
+                      <SubTopic info={subTopic6} />
+                    </div>
+                    {subTopic7 ?
+                      <div className='subcategory__div'>
+                        <SubTopic info={subTopic7} />
+                        <SubTopic info={subTopic8} />
+                      </div>
+                      :
+                      null
+                    }
+
+                  </div>
+                </Grow>
                 :
                 null
               }

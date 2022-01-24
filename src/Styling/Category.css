@@ -30,8 +30,8 @@
 
 .checkbox {
 	position: absolute;
-	top: 2vw;
-	right: 2vw;
+	top: 4px;
+	right: 4px;
 }
 
 .divider {
@@ -44,6 +44,19 @@
 .subcategory__div {
 	display: flex;
 	justify-content: space-evenly;
+}
+
+
+.subcategory__button{
+  height: 45px;
+  width: 40vw;
+  border-radius: 10px;
+	border: none;
+  font-size: 95%;
+	font-weight: bold;
+	color: white;
+	background-image: linear-gradient(to right, #31aae1 0%, #265ac2 100%);
+	box-shadow: 0 1px 5px #585858;
 }
 
 .next__div{

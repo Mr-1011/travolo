@@ -34,7 +34,6 @@ export default function Swipe() {
 
   const onChange = (event) => {
     i18next.changeLanguage(event.target.value)
-    console.log(i18next.language);
   }
 
   return (

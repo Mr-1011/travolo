@@ -26,6 +26,10 @@ export default function Category() {
             subTopic2={category.subTopic2}
             subTopic3={category.subTopic3}
             subTopic4={category.subTopic4}
+            subTopic5={category.subTopic5}
+            subTopic6={category.subTopic6}
+            subTopic7={category.subTopic7}
+            subTopic8={category.subTopic8}
           />
         ))
         :
@@ -39,6 +43,10 @@ export default function Category() {
             subTopic2={category.subTopic2}
             subTopic3={category.subTopic3}
             subTopic4={category.subTopic4}
+            subTopic5={category.subTopic5}
+            subTopic6={category.subTopic6}
+            subTopic7={category.subTopic7}
+            subTopic8={category.subTopic8}
           />
         ))
       }
