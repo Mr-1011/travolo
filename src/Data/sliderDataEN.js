@@ -7,43 +7,70 @@ import Event from '../Data/svg/Event.svg'
 import Backpack from '../Data/svg/Backpack.svg'
 import RoadTrip from '../Data/svg/Road-Trip.svg'
 import Chill from '../Data/svg/Chill.svg'
+import Sunny from '../Data/svg/Sunny.svg'
+import Snowy from '../Data/svg/Snowy.svg'
+import Shopping from '../Data/svg/Shopping.svg'
 
 const sliderDataEN = [
   {
+    id: 1,
     title: 'Nature & Wildlife',
     svg: Nature,
   },
   {
+    id: 2,
     title: 'City & Highlife',
     svg: City,
   },
   {
+    id: 3,
+    title: 'Sun & Beaches',
+    svg: Sunny,
+  },
+  {
+    id: 4,
+    title: 'Snow & Mointains',
+    svg: Snowy,
+  },
+  {
+    id: 5,
     title: 'Culture & Art',
     svg: Culture,
   },
   {
+    id: 6,
     title: 'Adventure & Action',
     svg: Adventure,
   },
   {
-    title: 'Road Trip & Camper',
+    id: 7,
+    title: 'Party, Clubs & Nightlife',
     svg: Party,
   },
   {
-    title: 'Party, Clubs & Nightlife',
+    id: 8,
+    title: 'Chill & Relax',
+    svg: Chill,
+  },
+  {
+    id: 9,
+    title: 'Shopping & Malls',
+    svg: Shopping,
+  },
+  {
+    id: 10,
+    title: 'Events & Festivals',
     svg: Event,
   },
   {
-    title: 'Events & Festivals',
-    svg: Backpack,
-  },
-  {
-    title: 'Backpack Traveling',
+    id: 11,
+    title: 'Road Trip & Camper',
     svg: RoadTrip,
   },
   {
-    title: 'Chill & Relax',
-    svg: Chill,
+    id: 12,
+    title: 'Backpack & Go',
+    svg: Backpack,
   }
 ]
 
