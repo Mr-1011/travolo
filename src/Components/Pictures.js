@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import TinderCard from 'react-tinder-card';
 import '../Styling/Pictures.css';
 import pictureData from '../Data/pictureData';
@@ -61,7 +61,6 @@ export default function Pictures() {
         :
         null
       }
-
 
       {cont ?
         <>

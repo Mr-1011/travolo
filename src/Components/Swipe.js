@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import Navbar from './Navbar'
 import Pictures from './Pictures'
 import Pic from '../Data/help/Swipe-Tutorial.png'
-import Intro from '../Data/help/Intro.png'
+import IntroEN from '../Data/help/IntroEN.png'
+import IntroDE from '../Data/help/IntroDE.png'
 import '../Styling/Swipe.css'
 import i18next from 'i18next';
 import { initReactI18next, useTranslation } from 'react-i18next';
@@ -34,6 +35,7 @@ export default function Swipe() {
 
   const onChange = (event) => {
     i18next.changeLanguage(event.target.value)
+    document.documentElement.lang = i18next.language;
   }
 
   return (
@@ -51,7 +53,7 @@ export default function Swipe() {
             <p className='intro__p'>
               {t('intro')}
             </p>
-            <img className='intro__img' src={Intro} />
+            <img className='intro__img' src={i18next.language === 'en' ? IntroEN : IntroDE} alt='Intro' />
             <button className='intro__button' onClick={handleSubmit}>
               Start
             </button>

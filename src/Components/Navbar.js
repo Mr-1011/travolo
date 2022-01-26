@@ -70,14 +70,13 @@ export default function Navbar({ title, desc, pic }) {
                 </div>
             </div>
             {checked ?
-
                 <div className='help__center'>
                     <div className='help__block' />
                     <div className='help__div'>
                         <div className='help__text__div'>
                             <h1 className='help__h1'>{t('Guide')}</h1>
                             <p className='help__p'>{desc}</p>
-                            <img className='help__img' src={pic} alt=''></img>
+                            <img className='help__img' src={pic} alt='tutorial'></img>
                             <button className='help__button' onClick={handleSubmit}>
                                 {t('Gotit')}
                             </button>

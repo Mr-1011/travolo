@@ -1,6 +1,6 @@
 .slider__component {
   background-image: linear-gradient(to right, #31aae1 0%, #265ac2 100%);
-  padding: 6vw;
+  padding: 3vh 7vw;
   margin: 3vh;
   border-radius: 20px;
   box-shadow: 0 1px 10px #585858;
@@ -22,11 +22,13 @@
 }
 
 .slider__svg {
-  height: 9vh;
+  width: 25vw;
   max-width: 30vw;
-  margin: 0 2vw 1vh 8vw;
+  margin: 0 1vw 1vh 5vw;
 }
 
 .slider__title{
   font-size: 7vw;
+  margin-top: 1vh;
+  line-height: 120%;
 }

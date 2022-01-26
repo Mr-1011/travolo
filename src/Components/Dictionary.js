@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Autocomplete, TextField } from '@mui/material'
 import '../Styling/Dictionary.css'
 import Navbar from './Navbar'
@@ -21,12 +21,10 @@ export default function Dictionary() {
       <Navbar title={'just type'} desc={t('dictionaryTutorial')} pic={Pic} />
 
       <div className='dictionary__div'>
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} className='dictionary__form'>
           <Autocomplete
-            sx={{ width: 300 }}
             multiple
-            options={
-              i18next.language === 'en' ? dictionaryDataEN : dictionaryDataDE}
+            options={i18next.language === 'en' ? dictionaryDataEN : dictionaryDataDE}
             getOptionLabel={(option) => option.label}
             filterSelectedOptions
             renderInput={(params) => (

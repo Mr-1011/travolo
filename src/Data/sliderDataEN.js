@@ -10,6 +10,8 @@ import Chill from '../Data/svg/Chill.svg'
 import Sunny from '../Data/svg/Sunny.svg'
 import Snowy from '../Data/svg/Snowy.svg'
 import Shopping from '../Data/svg/Shopping.svg'
+import LongTerm from '../Data/svg/Long-Term.svg'
+import Budget from '../Data/svg/Budget.svg'
 
 const sliderDataEN = [
   {
@@ -34,7 +36,7 @@ const sliderDataEN = [
   },
   {
     id: 5,
-    title: 'Culture & Art',
+    title: 'Culture & Arts',
     svg: Culture,
   },
   {
@@ -44,7 +46,7 @@ const sliderDataEN = [
   },
   {
     id: 7,
-    title: 'Party, Clubs & Nightlife',
+    title: 'Party & Nightlife',
     svg: Party,
   },
   {
@@ -69,8 +71,18 @@ const sliderDataEN = [
   },
   {
     id: 12,
-    title: 'Backpack & Go',
+    title: 'Saving & Budgeting',
+    svg: Budget,
+  },
+  {
+    id: 13,
+    title: 'Backpack & Short Trips',
     svg: Backpack,
+  },
+  {
+    id: 14,
+    title: 'Suitcase & Long Travel',
+    svg: LongTerm,
   }
 ]
 

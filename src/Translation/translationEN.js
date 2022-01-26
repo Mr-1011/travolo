@@ -10,23 +10,23 @@ const translationEN = {
   Category: "Category",
   Slider: "Slider",
   Dicionary: "Dicionary",
-  Guide: "Quick guide",
+  Guide: "Quick Guide",
 
   //Swipe
-  swipeTutorial: "just swipe right if you like what you see or left if you don’t",
+  swipeTutorial: "Just swipe right if you like what you see or left if you don’t",
   swipeMore: "Do you want to see more pictures?",
   swipeEnd: "Thats all for now",
 
   //Category
-  categoryTutorial: "just choose what you like and click your way through categories",
+  categoryTutorial: "Just choose what you like and click your way through categories",
 
   //Slider
-  sliderTutorial: "just put the slider on the following categories whether you like them or not",
+  sliderTutorial: "Just scroll through the categories and set the slider",
   hate: "hate it",
   love: "love it",
 
   //Dictionary
-  dictionaryTutorial: "just type categories you are looking for for your next vacation",
+  dictionaryTutorial: "Just enter your vacation interests and click on the suggestions",
   fieldTitle: "What are you looking for?",
   fieldPlaceholder: "Interests",
 }

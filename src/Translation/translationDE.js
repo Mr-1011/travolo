@@ -1,6 +1,6 @@
 const translationDE = {
   //General
-  intro: "Willkommen. Du wirst nun 4 verschiedene Befragungsmodelle sehen, die deine Reiseinteressen auf neue Weise erfassen. Ziel dieses Projektes ist es, neue Befragungsmethoden zu testen, du wirst daher leider noch keine Empfehlungen zu Reiseorten, die zu dir passen, erhalten. Es werden keine Daten gespeichert oder von uns empfangen. Teste unsere Modelle und nehme anschließend an unserer Umfrage teil.",
+  intro: "Willkommen. Du wirst nun 4 verschiedene Befragungsmodelle sehen, die deine Reiseinteressen auf neue Weisen erfassen. Ziel dieses Projektes ist es neue Befragungsmethoden zu testen. Daher wirst du leider noch keine Empfehlungen zu Reiseorten erhalten. Es werden keine Daten empfangen oder gespeichert. Teste unsere Modelle und nimm anschließend an unserer Umfrage teil.",
   yes: "ja",
   no: "nein",
   next: "weiter",
@@ -13,9 +13,9 @@ const translationDE = {
   Guide: "Anleitung",
 
   //Swipe
-  swipeTutorial: "swipe nach rechts wenn dir gefällt was du sieht oder links wenn nicht",
+  swipeTutorial: "Swipe nach rechts, wenn dir gefällt was du siehst oder links, wenn nicht",
   swipeMore: "Willst du mehr Bilder sehen?",
-  swipeEnd: "Das war es für jetzt",
+  swipeEnd: "Das war's für jetzt",
 
   //Category
   categoryTutorial: "Klicke dich einfach durch die Beschreibungen und wähle aus was dir gefällt",
@@ -26,7 +26,7 @@ const translationDE = {
   love: "liebe es",
 
   //Dictionary
-  dictionaryTutorial: "Gib einfach deine Urlaubs Interessen und klicke auf die Vorschläge",
+  dictionaryTutorial: "Gib einfach deine Urlaubs Interessen ein und klicke auf die Vorschläge",
   fieldTitle: "Wonach suchst du im Urlaub?",
   fieldPlaceholder: "Interessen",
 }
