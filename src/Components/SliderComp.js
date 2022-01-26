@@ -16,7 +16,7 @@ export default function SliderComp({ title, svg }) {
     <div className='slider__component'>
       <div className='slider__info'>
         <h1 className='slider__title'>{title}</h1>
-        <img src={svg} className='slider__svg ' alt='' />
+        <img src={svg} className='slider__svg ' alt={title} />
       </div>
       <div className='slider__div'>
         <Slider

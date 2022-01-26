@@ -12,13 +12,6 @@ import { useTranslation } from 'react-i18next';
 export default function Sliders() {
   const { t } = useTranslation();
 
-  if (i18next.language === 'en') {
-
-  }
-  else {
-
-  }
-
   return (
     <main>
       <Navbar title={'just slide'} desc={t('sliderTutorial')} pic={Pic} />
@@ -28,6 +21,7 @@ export default function Sliders() {
           <SliderComp
             title={slid.title}
             svg={slid.svg}
+            key={slid.id}
           />
         ))
         :
@@ -35,6 +29,7 @@ export default function Sliders() {
           <SliderComp
             title={slid.title}
             svg={slid.svg}
+            key={slid.id}
           />
         ))
       }

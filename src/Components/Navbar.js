@@ -8,8 +8,10 @@ import qr from '../Data/help/qr-code.svg';
 import Instructions from '../Data/help/Instructions.svg'
 import { Link } from "react-router-dom";
 import '../Styling/Navbar.css'
+import { useTranslation } from 'react-i18next';
 
 export default function Navbar({ title, desc, pic }) {
+    const { t } = useTranslation();
 
     const [anchorEl, setAnchorEl] = useState(null);
     const open = Boolean(anchorEl);
@@ -49,16 +51,16 @@ export default function Navbar({ title, desc, pic }) {
                         }}
                     >
                         <MenuItem>
-                            <Link to='/' className='link'>Swipe</Link>
+                            <Link to='/' className='link'>{t('Swipe')}</Link>
                         </MenuItem>
                         <MenuItem>
-                            <Link to='/category' className='link'>Category</Link>
+                            <Link to='/category' className='link'>{t('Category')}</Link>
                         </MenuItem>
                         <MenuItem>
-                            <Link to='/sliders' className='link'>Slider</Link>
+                            <Link to='/sliders' className='link'>{t('Slider')}</Link>
                         </MenuItem>
                         <MenuItem>
-                            <Link to='/dictionary' className='link'>Dictionary</Link>
+                            <Link to='/dictionary' className='link'>{t('Dicionary')}</Link>
                         </MenuItem>
                     </Menu>
                     <h1 className='flexItem'>{title}</h1>
@@ -68,16 +70,16 @@ export default function Navbar({ title, desc, pic }) {
                 </div>
             </div>
             {checked ?
+
                 <div className='help__center'>
                     <div className='help__block' />
-
                     <div className='help__div'>
                         <div className='help__text__div'>
-                            <h1 className='help__h1'>Quick guide</h1>
+                            <h1 className='help__h1'>{t('Guide')}</h1>
                             <p className='help__p'>{desc}</p>
                             <img className='help__img' src={pic} alt=''></img>
                             <button className='help__button' onClick={handleSubmit}>
-                                Got it
+                                {t('Gotit')}
                             </button>
                         </div>
                     </div>
@@ -86,8 +88,8 @@ export default function Navbar({ title, desc, pic }) {
                 null
             }
             <div className='desktop__view'>
-                <img className='desktop__svg' src={Instructions} />
-                <img className='desktop__img' src={qr} />
+                <img className='desktop__svg' src={Instructions} alt='Instructions' />
+                <img className='desktop__img' src={qr} alt='QR Code' />
                 <h1>only on mobile</h1>
             </div>
         </div>

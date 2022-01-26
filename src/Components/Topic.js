@@ -12,6 +12,7 @@ export default function Topic({ title, description, svg, subTopic1, subTopic2, s
 
   const handleChange = (event) => {
     setChecked(event.target.checked);
+
   }
 
   const handleMore = () => {

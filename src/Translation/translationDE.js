@@ -5,9 +5,15 @@ const translationDE = {
   no: "nein",
   next: "weiter",
   NEXT: "WEITER",
+  Gotit: "Start",
+  Swipe: "Swipen",
+  Category: "Kategorien",
+  Slider: "Slider",
+  Dicionary: "Themen",
+  Guide: "Anleitung",
 
   //Swipe
-  swipeTutorial: "swipe nach rechts, wenn dir gefällt was du sieht oder links, wenn nicht",
+  swipeTutorial: "swipe nach rechts wenn dir gefällt was du sieht oder links wenn nicht",
   swipeMore: "Willst du mehr Bilder sehen?",
   swipeEnd: "Das war es für jetzt",
 

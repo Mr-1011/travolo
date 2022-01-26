@@ -5,6 +5,12 @@ const translationEN = {
   no: "no",
   next: "next",
   NEXT: "NEXT",
+  Gotit: "Got it",
+  Swipe: "Swipe",
+  Category: "Category",
+  Slider: "Slider",
+  Dicionary: "Dicionary",
+  Guide: "Quick guide",
 
   //Swipe
   swipeTutorial: "just swipe right if you like what you see or left if you don’t",

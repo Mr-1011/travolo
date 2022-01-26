@@ -2,15 +2,15 @@ import React, { useState } from 'react';
 import { Autocomplete, TextField } from '@mui/material'
 import '../Styling/Dictionary.css'
 import Navbar from './Navbar'
-import dictionaryData from '../Data/dictionaryData'
 import { Link } from "react-router-dom";
-import Pic from '../Data/help/Dictionary-Tutorial.png'
+import Pic from '../Data/help/Dictionary-Tutorial.png';
 import { useTranslation } from 'react-i18next';
+import i18next from 'i18next';
+import dictionaryDataEN from '../Data/dictionaryDataEN';
+import dictionaryDataDE from '../Data/dictionaryDataDE';
 
 export default function Dictionary() {
   const { t } = useTranslation();
-
-  const [dictionary, setDictionary] = useState(dictionaryData)
 
   const handleSubmit = (e) => {
     e.preventDefault()
@@ -19,12 +19,14 @@ export default function Dictionary() {
   return (
     <div>
       <Navbar title={'just type'} desc={t('dictionaryTutorial')} pic={Pic} />
+
       <div className='dictionary__div'>
         <form onSubmit={handleSubmit}>
           <Autocomplete
             sx={{ width: 300 }}
             multiple
-            options={dictionary}
+            options={
+              i18next.language === 'en' ? dictionaryDataEN : dictionaryDataDE}
             getOptionLabel={(option) => option.label}
             filterSelectedOptions
             renderInput={(params) => (
@@ -37,6 +39,7 @@ export default function Dictionary() {
           />
         </form>
       </div>
+
       <div className='next__div' style={{ marginTop: "4vh" }}>
         <Link to='/sliders' className='next__link' >
           <button className='button__next' style={{ marginBottom: '70vh' }}>
