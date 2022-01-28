@@ -21,7 +21,7 @@ const categoryDataDE = [
   {
     id: 1,
     title: 'Natur & Wildnis',
-    description: 'Du bist gerne in der Natur. Zwitschernde Vögel. Plätscherndes Wasser. Eine frische Brise. Entweder Aktivitäten, die dich zum Laufen bringen oder einfach nur am Lagerfeuer sitzen. Du bist glücklich, solange du draußen bist.',
+    description: 'Du bist gerne in der Natur. Zwitschernde Vögel. Plätscherndes Gewässer. Entweder Aktivitäten, die dich zum Laufen bringen oder einfach nur am Lagerfeuer sitzen. Du bist glücklich, solange du draußen bist.',
     svg: Nature,
     subTopic1: 'Wald',
     subTopic2: 'Wildtiere',
@@ -35,7 +35,7 @@ const categoryDataDE = [
   {
     id: 2,
     title: 'Großstadt Tourist',
-    description: 'Du bist besessen von pulsierenden Städten. Hohe Gebäude, Shoppen in Boutiquen, essen in teuren Restaurants, ein Drink auf einer Rooftop Bar und Nachtleben bis die Sonne aufgeht.',
+    description: 'Du bist besessen von pulsierenden Städten. Wolkenkratzer, Shoppen in Boutiquen, essen in teuren Restaurants, ein Drink in einer Rooftop Bar, Party und Nachtleben bis die Sonne aufgeht.',
     svg: City,
     subTopic1: 'Shoppen',
     subTopic2: 'Wolkenkratzer',
@@ -47,12 +47,14 @@ const categoryDataDE = [
   {
     id: 3,
     title: 'Sonne & Strand',
-    description: 'Du liebst es, in der Sonne zu sein, dich zu sonnen und ein Buch am Strand zu lesen und Aktivitäten wie Beachvolleyball oder schwimmen. Du bist glücklich, solange es warm ist.',
+    description: 'Du liebst es, in der Sonne zu sein. Dich zu sonnen. Ein Buch am Strand zu lesen oder vielleicht Aktivitäten wie Beachvolleyball oder Schwimmen. Du bist glücklich, solange es warm ist.',
     svg: Sunny,
     subTopic1: 'Bräunen',
     subTopic2: 'Schwimmen',
     subTopic3: 'Insel Hopping',
     subTopic4: 'Surfen',
+    subTopic5: 'Beachvolleyball',
+    subTopic6: 'Pool',
   },
   {
     id: 4,
@@ -65,7 +67,7 @@ const categoryDataDE = [
   {
     id: 5,
     title: 'Kulturliebhaber',
-    description: 'Du reist, um in die örtliche Kultur einzutauchen und neue Erfahrungen zu sammeln. Kulturelle Bereicherung, Kontakte mit Locals, ein Nachmittag in einem Museum.',
+    description: 'Du reist, um in die örtliche Kultur einzutauchen und neue Erfahrungen zu sammeln. Von kultureller Bereicherung über Kontakte mit Locals hinzu einem Nachmittag in Museum.',
     svg: Culture,
     subTopic1: 'Museum',
     subTopic2: 'Sehens-würdigkeiten',
@@ -95,18 +97,18 @@ const categoryDataDE = [
     subTopic2: 'Spa',
     subTopic3: 'Kreuzfahrtschiff',
     subTopic4: 'Meditation',
-
+    subTopic5: 'All Inclusive',
+    subTopic6: 'Massage',
   },
   {
     id: 8,
     title: 'Party & Clubs',
-    description: 'Du reist, um zu feiern. Eine ganze Nacht im Club mit deinen Freunden oder eine Hausparty bei Leuten die du seit 2 Tagen kennst. Party > Buch am Strand.',
+    description: 'Du reist, um zu feiern und deinen Urlaub mit Musik zu genießen. Eine ganze Nacht im Club mit deinen Freunden oder eine Hausparty bei Leuten die du seit 2 Tagen kennst. Party > Buch am Strand.',
     svg: Party,
     subTopic1: 'Club',
     subTopic2: 'Bar',
     subTopic3: 'Hip-Hop',
     subTopic4: 'Dance',
-
   },
   {
     id: 9,
@@ -123,6 +125,8 @@ const categoryDataDE = [
     title: 'Social Media',
     description: 'Du liebst den Lifestyle von Influencern und teilst deine Reise entweder mit Freunden und Familie oder nur mit deinen Followern. Du hältst jeden Moment mit deinem Handy oder deiner Kamera fest.',
     svg: Social,
+    subTopic1: 'Fotografie',
+    subTopic2: 'Film',
   },
   {
     id: 11,
@@ -132,8 +136,8 @@ const categoryDataDE = [
     subTopic1: 'Angebote',
     subTopic2: 'Marken',
     subTopic3: 'Vintage',
-    subTopic4: 'Souvenirs',
-  }, ,
+    subTopic4: 'Souvenir',
+  },
   {
     id: 12,
     title: 'Nie Alleine',
@@ -159,7 +163,7 @@ const categoryDataDE = [
   {
     id: 15,
     title: 'Road Trip',
-    description: 'Du und dein Wohnmobil oder Auto seid bereit zur Abreise. Pack deine Sachen und vergiss deine Landkarte nicht. Du möchtest mehr als nur ein Ziel sehen und die Freiheit haben, zu schlafen, wo und wann du willst.',
+    description: 'Du und dein Wohnmobil oder Auto seid bereit zur Abreise. Pack deine Sachen und vergiss deine Landkarte nicht. Du möchtest mehr als nur einen Ort sehen und die Freiheit haben, zu schlafen, wann und wo du willst.',
     svg: RoadTrip,
     subTopic1: 'Camper',
     subTopic2: 'Auto',
@@ -178,6 +182,6 @@ const categoryDataDE = [
     subTopic1: 'Steuervorteil',
     subTopic2: 'Remote Work',
   }
-]
+];
 
 export default categoryDataDE;

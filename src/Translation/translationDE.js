@@ -1,16 +1,17 @@
 const translationDE = {
   //General
-  intro: "Willkommen. Du wirst nun 4 verschiedene Befragungsmodelle sehen, die deine Reiseinteressen auf neue Weisen erfassen. Ziel dieses Projektes ist es neue Befragungsmethoden zu testen. Daher wirst du leider noch keine Empfehlungen zu Reiseorten erhalten. Es werden keine Daten empfangen oder gespeichert. Teste unsere Modelle und nimm anschließend an unserer Umfrage teil.",
+  intro: "Willkommen. Du wirst nun 4 verschiedene Befragungsmodelle sehen, die deine Reiseinteressen auf neue Weisen erfassen. Ziel dieses Projektes ist es neue Befragungsmethoden zu testen. Daher wirst du leider noch keine Empfehlungen zu Reiseorten erhalten. Es werden keine Daten empfangen oder gespeichert. Teste unsere Modelle und nimm anschließend bitte an unserer Umfrage teil.",
   yes: "ja",
   no: "nein",
   next: "weiter",
   NEXT: "WEITER",
   Gotit: "Start",
-  Swipe: "Swipen",
-  Category: "Kategorien",
-  Slider: "Slider",
-  Dicionary: "Themen",
+  Swipe: "Swipe",
+  Category: "Choose",
+  Slider: "Slide",
+  Dicionary: "Type",
   Guide: "Anleitung",
+  Survey: "Zur Umfrage",
 
   //Swipe
   swipeTutorial: "Swipe nach rechts, wenn dir gefällt was du siehst oder links, wenn nicht",

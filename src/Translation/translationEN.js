@@ -7,10 +7,11 @@ const translationEN = {
   NEXT: "NEXT",
   Gotit: "Got it",
   Swipe: "Swipe",
-  Category: "Category",
-  Slider: "Slider",
-  Dicionary: "Dicionary",
+  Category: "Choose",
+  Slider: "Slide",
+  Dicionary: "Type",
   Guide: "Quick Guide",
+  Survey: "Survey",
 
   //Swipe
   swipeTutorial: "Just swipe right if you like what you see or left if you don’t",

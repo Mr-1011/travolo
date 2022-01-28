@@ -71,7 +71,7 @@ const sliderDataDE = [
   },
   {
     id: 12,
-    title: 'Sparsam & Budget',
+    title: 'Sparsames Reisen',
     svg: Budget,
   },
   {

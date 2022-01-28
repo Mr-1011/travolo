@@ -2,7 +2,6 @@ import React from 'react';
 import { Autocomplete, TextField } from '@mui/material'
 import '../Styling/Dictionary.css'
 import Navbar from './Navbar'
-import { Link } from "react-router-dom";
 import Pic from '../Data/help/Dictionary-Tutorial.png';
 import { useTranslation } from 'react-i18next';
 import i18next from 'i18next';
@@ -14,6 +13,15 @@ export default function Dictionary() {
 
   const handleSubmit = (e) => {
     e.preventDefault()
+  }
+
+  const handleClick = () => {
+    if (i18next.language === 'en') {
+      window.location.href = 'https://www.umfrageonline.com/c/travolo'
+    }
+    else {
+      window.location.href = 'https://www.umfrageonline.com/c/travolo-de'
+    }
   }
 
   return (
@@ -39,11 +47,9 @@ export default function Dictionary() {
       </div>
 
       <div className='next__div' style={{ marginTop: "4vh" }}>
-        <Link to='/sliders' className='next__link' >
-          <button className='button__next' style={{ marginBottom: '70vh' }}>
-            {t('NEXT')}
-          </button>
-        </Link>
+        <button onClick={handleClick} className='button__next' style={{ marginBottom: '70vh' }} >
+          {t('Survey')}
+        </button>
       </div>
     </div>
   )

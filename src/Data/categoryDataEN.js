@@ -20,7 +20,7 @@ const categoryDataEN = [
   {
     id: 1,
     title: 'Nature Wildlifer',
-    description: 'You love to be in the Nature. Chirping birds. Rippling water. A fresh breeze. Either activities to get you going or just sitting at a firepit. You are happy as long as you are outside.',
+    description: 'You love to be in nature. Chirping birds. Rippling water. Either activities that get you running or just sitting around a campfire with marshmallows. You are happy as long as you are outside.',
     svg: Nature,
     subTopic1: 'Forest',
     subTopic2: 'Wildlife',
@@ -34,7 +34,7 @@ const categoryDataEN = [
   {
     id: 2,
     title: 'City Slicker',
-    description: 'You are obsessed with vibrant cities. Skyscrapers, shopping in boutiques, fine dinning in restaurants, a drink at a rooftop bar, and nightlife till the sun comes up this is your cup of tea.',
+    description: 'You are obsessed with vibrant cities. Skyscrapers, shopping in boutiques, eating in expensive restaurants, a drink in a rooftop bar, partying and nightlife until the sun rises.',
     svg: City,
     subTopic1: 'Shopping',
     subTopic2: 'Skyscrapper',
@@ -52,11 +52,13 @@ const categoryDataEN = [
     subTopic2: 'Swimming',
     subTopic3: 'Island Hopping',
     subTopic4: 'Surfing',
+    subTopic5: 'Beachvolleyball',
+    subTopic6: 'Pool',
   },
   {
     id: 4,
     title: 'Snow Lover',
-    description: 'You love the sound of footsteps on new snow. A warm jacket, snowboard or ski equipment and you are ready to tackle the next ski slope.',
+    description: 'You love the sound of footsteps on new snow. A warm jacket, snowboard or ski equipment and you are ready to tackle the next ski slope and end the day with hot chocolate.',
     svg: Snowy,
     subTopic1: 'Skiing ',
     subTopic2: 'Snowboarding',
@@ -94,6 +96,8 @@ const categoryDataEN = [
     subTopic2: 'Spa',
     subTopic3: 'Cruise Ship',
     subTopic4: 'Meditation',
+    subTopic5: 'All Inclusive',
+    subTopic6: 'Massage',
   },
   {
     id: 8,
@@ -120,6 +124,8 @@ const categoryDataEN = [
     title: 'Social Media',
     description: 'You love the lifestyle of influencers either sharing your trip with friends or family or to your followers only. You capture every moment with your phone or your camera.',
     svg: Social,
+    subTopic1: 'Photography',
+    subTopic2: 'Film',
   },
   {
     id: 11,
