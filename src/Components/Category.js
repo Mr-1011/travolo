@@ -50,7 +50,6 @@ export default function Category() {
           />
         ))
       }
-
       <div className='next__div'>
         <Link to='/sliders' className='next__link'>
           <button className='button__next' onClick={() => window.scrollTo({ top: 0 })}>

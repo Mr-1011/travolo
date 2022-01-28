@@ -5,7 +5,6 @@ import Category from './Components/Category';
 import Sliders from './Components/Sliders';
 import Dictionary from './Components/Dictionary';
 
-
 function App() {
   return (
     <div className='App'>

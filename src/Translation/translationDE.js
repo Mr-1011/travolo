@@ -12,6 +12,7 @@ const translationDE = {
   Dicionary: "Type",
   Guide: "Anleitung",
   Survey: "Zur Umfrage",
+  more: "mehr",
 
   //Swipe
   swipeTutorial: "Swipe nach rechts, wenn dir gefällt was du siehst oder links, wenn nicht",

@@ -52,7 +52,6 @@ export default function Pictures() {
         :
         null
       }
-
       {showDislike ?
         <div className='disliked__div'>
           <h1>Disliked</h1>
@@ -61,7 +60,6 @@ export default function Pictures() {
         :
         null
       }
-
       {cont ?
         <>
           {end ?
@@ -74,7 +72,6 @@ export default function Pictures() {
                   </Link>
                 </div>
               </div>
-
               {pictureData.slice(index, index + 15).map(pic => (
                 <TinderCard className='swipe' key={pic.id} preventSwipe={['up', 'down']} onSwipe={onSwipe}>
                   <div className='card' style={{ backgroundImage: `url(${pic.img})` }} />
@@ -112,7 +109,6 @@ export default function Pictures() {
           </div>
         </div>
       }
-
       {pictureData.slice(index, 10).map(pic => (
         <TinderCard className='swipe' key={pic.id} preventSwipe={['up', 'down']} onSwipe={onSwipe}>
           <div className='card' style={{ backgroundImage: `url(${pic.img})` }} />

@@ -1,6 +1,6 @@
-import React from 'react'
+import React from 'react';
 import Checkbox from '@mui/material/Checkbox';
-import '../Styling/SubTopic.css'
+import '../Styling/SubTopic.css';
 
 export default function SubTopic({ info, check }) {
   return (

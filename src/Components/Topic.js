@@ -3,9 +3,11 @@ import Checkbox from '@mui/material/Checkbox';
 import Grow from '@mui/material/Grow';
 import SubTopic from './SubTopic';
 import '../Styling/Category.css'
+import { useTranslation } from 'react-i18next';
 
 
 export default function Topic({ title, description, svg, subTopic1, subTopic2, subTopic3, subTopic4, subTopic5, subTopic6, subTopic7, subTopic8 }) {
+  const { t } = useTranslation();
 
   const [checked, setChecked] = useState(false);
   const [more, setMore] = useState(false);
@@ -59,7 +61,7 @@ export default function Topic({ title, description, svg, subTopic1, subTopic2, s
               {subTopic5 && !more ?
                 <Grow in={checked} {...(checked ? { timeout: 1000 } : {})}>
                   <div className='subcategory__div'>
-                    <button className='subcategory__button' onClick={handleMore}>more</button>
+                    <button className='subcategory__button' onClick={handleMore}>{t('more')}</button>
                   </div>
                 </Grow>
                 :

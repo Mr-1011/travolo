@@ -1,7 +1,7 @@
 import React from 'react';
-import { Autocomplete, TextField } from '@mui/material'
-import '../Styling/Dictionary.css'
-import Navbar from './Navbar'
+import { Autocomplete, TextField } from '@mui/material';
+import '../Styling/Dictionary.css';
+import Navbar from './Navbar';
 import Pic from '../Data/help/Dictionary-Tutorial.png';
 import { useTranslation } from 'react-i18next';
 import i18next from 'i18next';
@@ -27,7 +27,6 @@ export default function Dictionary() {
   return (
     <div>
       <Navbar title={'just type'} desc={t('dictionaryTutorial')} pic={Pic} />
-
       <div className='dictionary__div'>
         <form onSubmit={handleSubmit} className='dictionary__form'>
           <Autocomplete
@@ -45,7 +44,6 @@ export default function Dictionary() {
           />
         </form>
       </div>
-
       <div className='next__div' style={{ marginTop: "4vh" }}>
         <button onClick={handleClick} className='button__next' style={{ marginBottom: '70vh' }} >
           {t('Survey')}

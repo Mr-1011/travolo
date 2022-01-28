@@ -24,8 +24,8 @@ i18next
 
 
 export default function Swipe() {
-
   const { t } = useTranslation();
+
   const [checked, setChecked] = useState(true);
 
   const handleSubmit = () => {
